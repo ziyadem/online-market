@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#logo{
+    width: 140px;
+}
+.search-div{
+    background-color: #c6c6c680;
+    border:1px solid #a1a1a180 !important;
+    .search-input:focus{
+        border: none !important;
+        outline: none !important;
+        
+    }
+    .search-input{
+        background-color: #e4e3e380;
+        border: none
+    }
+}
+.top-number{
+    margin-top: -1rem;
+    margin-left: -1rem;
+    border-radius: 50%;
+    width: 15px;
+    height:15px;
+    font-size: 10px;
+    align-items: center;
+}
