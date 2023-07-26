@@ -102,7 +102,7 @@ const Header = () => {
           </div>
         </nav>
         <nav className="bg-black">
-          <div className="container d-flex justify-content-between text-white p-3">
+          <div className="container d-none d-lg-flex justify-content-between text-white p-3">
             <div>
               <p>Каталог ножей</p>
               <p></p>
