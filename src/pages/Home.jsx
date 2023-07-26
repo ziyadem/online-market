@@ -1,18 +1,340 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom';
+import SpecialProduct from '../components/SpecialProduct';
+import FreshProduct from '../components/FreshProduct';
+import ProductCard from '../components/ProductCard';
 
 const Home = () => {
+  let obj={
+    name:"Aksiya",
+    site:"Barcha aksiyalar"
+  }
+  let obj3={
+    name:"Fanar",
+    site:"Barcha aksiyalar"
+  }
+  let obj2 = {
+    name: "Aksiya",
+    site: "Barcha aksiyalar",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium deserunt quasi dolor! Consequuntur, officiis aut. Tempore maiores explicabo distinctio a consequatur atque odit ut ratione expedita. Aut illo accusamus, laborum magnam fugit, dignissimos ab, quia quidem tempore veritatis dicta sunt sapiente adipisci doloremque. Molestias numquam dolores soluta possimus ipsa fugit, doloribus sit! Voluptate, incidunt aliquid! Accusantium eligendi dolor debitis sit? Quis eius nostrum qui ad obcaecati rem, quam ut natus voluptatem ratione, voluptate iste nesciunt tempora consectetur ipsa aliquid non! Beatae earum impedit minus eum asperiores consectetur velit illo laboriosam, optio quae hic sapiente sequi soluta tenetur officia quaerat?",
+  };
   return (
     <>
-    <Header/>
-    <div className='container'>
-      <h1 className='text-center'>Hello world!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum neque facilis perspiciatis dolores distinctio voluptatum molestiae saepe molestias culpa eos odio nisi veniam dignissimos repellendus quae quisquam, ad odit sit? Animi minus culpa quasi veniam dignissimos, ex illum, laudantium, excepturi officiis at eaque ut aperiam repellendus accusamus soluta vitae. Fugit, culpa quaerat eligendi quisquam, itaque iusto non repudiandae minima dolorum nulla sint quo quia tenetur dolor alias delectus optio tempora harum unde recusandae id quibusdam ea corporis rerum! Illo, blanditiis, minus laborum a nulla quia magnam eveniet doloribus, fuga accusantium repellendus ipsam. Itaque ab optio quidem! Vitae ipsam nesciunt sed reprehenderit quidem cum, culpa dicta iste voluptatibus impedit labore possimus pariatur, doloribus illo adipisci sunt at repellat maiores ratione. Mollitia hic aperiam id reiciendis voluptate! Adipisci cum, porro sequi at, praesentium sed deserunt perferendis natus, itaque accusamus doloribus animi modi! Molestias reprehenderit tempore quisquam eos aperiam, vero odio libero id eligendi, officia dolor asperiores ullam. Blanditiis quia, officia dolorem ratione ipsum illo ab quibusdam inventore pariatur sapiente possimus ipsam iure magnam eligendi itaque, nihil, neque minus sunt? Inventore aliquid iure ipsum sunt mollitia perspiciatis dolorem totam. Ea perferendis aut repellendus aperiam, adipisci quasi, nobis libero necessitatibus commodi et ad amet. Sunt eaque illum consequatur, ab sint cum vitae quam ipsa rerum magnam voluptas rem explicabo tempora, temporibus praesentium velit, doloremque officia asperiores suscipit nobis! Excepturi ab fugit repellendus aliquid ratione veniam porro accusamus incidunt eveniet. Eius obcaecati molestiae recusandae cumque illo aut quasi doloremque, vel, eaque voluptatum quam ad? Deleniti velit ea consequuntur ex? A vero dolorum minus non quod iure omnis labore dolorem voluptatum odio deleniti rem, quo laborum optio quas consequuntur nulla sed minima cumque officiis! Consequuntur facere magni nostrum ut commodi error vero repellat iure quis dignissimos fuga hic numquam doloremque optio, excepturi labore delectus pariatur explicabo ducimus atque. Odio corporis debitis laborum officiis quidem esse quo rerum delectus perspiciatis molestias cumque illum nam suscipit, placeat nemo quasi, dolores fuga eius sit temporibus, aperiam nihil illo. At molestias sequi non quo minima voluptas? Et natus rem suscipit esse ipsum dicta facilis impedit quaerat tempore sed doloribus sint unde, mollitia ipsam consequatur voluptate hic dolor aliquam asperiores aut praesentium placeat beatae. Numquam quam alias, debitis doloribus quo iusto. Voluptates vero quis soluta quibusdam, ea vel aliquid sed est, quos facilis iusto libero expedita culpa adipisci saepe. Aliquid esse dolore nobis laborum dolorem et perferendis dicta, debitis inventore deserunt ullam rem numquam itaque, repellat nulla vero neque. Officia laudantium odio, officiis inventore aliquid veritatis maxime, exercitationem voluptatem necessitatibus aut accusamus recusandae quae modi! Dolorem vero animi nisi atque natus error cumque laboriosam reprehenderit labore at modi quia libero rerum quibusdam eaque nihil iure sequi sed, laborum, assumenda molestias ex quae eveniet sapiente? Magnam, quo eaque inventore voluptates debitis aliquam earum atque explicabo ea fugiat aperiam odio voluptas cum quasi! Labore quaerat possimus obcaecati illum officiis nisi, quas quia voluptatibus quasi. Culpa quibusdam aliquam dolor commodi eos illo possimus fugiat beatae id delectus. Aliquam adipisci cum nesciunt similique recusandae ab amet reprehenderit aut vel veniam sint, numquam cupiditate aliquid nobis officiis illum quasi quo fugit quibusdam vero itaque commodi rem asperiores ratione? Doloremque eligendi quae magni similique illum aperiam impedit eveniet, reiciendis consequuntur, odit repellat, iure odio ullam repellendus! Facere vitae eaque esse natus delectus, laudantium atque placeat eveniet accusamus blanditiis enim exercitationem dignissimos. Harum minima aliquid totam facilis iste quisquam, dignissimos, deserunt sit delectus, doloribus fuga at iure tempore ab expedita eos minus inventore possimus! Quasi reprehenderit unde omnis ratione soluta repudiandae, odit iure dolorem, obcaecati sint repellendus vel. Libero reiciendis quis sunt nemo at aperiam, error maiores veritatis illo atque, itaque dolores commodi corrupti possimus dolorum dolore! Quas deserunt laudantium placeat, eveniet possimus vero velit, dignissimos deleniti sapiente facilis alias, inventore ipsum laboriosam omnis maiores expedita sit voluptas ducimus esse? Laboriosam nemo quisquam accusantium voluptatibus numquam laudantium, ea sapiente similique asperiores, nostrum libero dignissimos modi delectus tempora! Temporibus explicabo unde placeat officiis obcaecati magnam impedit soluta, ipsa ab, dicta ipsum sint officia sapiente rerum vitae quisquam quas culpa reprehenderit expedita. Dolores quas consequuntur nesciunt quasi, cupiditate praesentium nobis, dicta eum, et repudiandae soluta! Maxime ipsam unde, aliquam a culpa inventore reiciendis? Pariatur incidunt soluta, et eaque nulla quisquam nesciunt voluptatibus cumque corrupti expedita harum natus repellat inventore accusantium magni quaerat corporis! Omnis magni praesentium perferendis accusamus eveniet rem excepturi, non delectus aspernatur accusantium dolore quae amet aut nobis odit unde pariatur aliquam, animi corrupti quibusdam ipsum esse illo. Inventore esse eius consequuntur magni veniam totam voluptatum qui amet quis cum assumenda facilis debitis suscipit architecto voluptate dolore doloribus, aliquid quam sapiente laboriosam eum quibusdam corporis dicta! Vel veniam mollitia commodi ad accusantium molestiae vitae laudantium laborum officia eos minus eaque blanditiis eveniet, harum expedita? Facere perspiciatis incidunt architecto quisquam minus error ipsam debitis possimus porro nemo! Nam dignissimos fuga a? Veniam ut, magnam, modi atque facere eius, quae vel eos aspernatur qui minus et suscipit. Omnis maiores unde dicta sequi. Quidem, illum, debitis architecto quod, error molestiae neque quisquam dolorem laudantium nesciunt impedit voluptates? Nostrum, voluptatibus ut optio nulla saepe hic. Ut dolor, provident omnis facilis ea nam dignissimos reiciendis architecto dolore maxime, temporibus, quia dicta nobis voluptate odit sapiente commodi placeat corporis. Rerum, quod. Error totam vero tenetur enim at. Voluptates sed, incidunt ducimus aut corrupti reiciendis debitis molestias minima, impedit, laborum ratione earum consectetur porro. Error maiores id adipisci quam quisquam tempora sunt veritatis voluptate enim officia saepe, provident nam tenetur cum in, voluptatem minima aliquid, quas magni repudiandae! Dolore animi veritatis facilis ad minus commodi veniam obcaecati quod accusantium neque eligendi quia architecto, officia quas delectus maxime. Incidunt ad, nam nemo aperiam ducimus maiores modi. Laborum, provident numquam quia nostrum vero quod et tempore velit accusantium accusamus, hic doloribus nobis officia totam corporis doloremque magni. Exercitationem nam illo blanditiis, hic libero adipisci minus. Veritatis dolores recusandae, perspiciatis unde totam nesciunt voluptas ullam, corrupti veniam expedita eum impedit aperiam cumque distinctio asperiores nulla sed, nostrum dicta aliquid quia dolorum tempora repellendus suscipit. Commodi facilis ea enim?</p>
-    </div>
-    <Footer/>
+      <Header />
+      <section className="main">
+        <div className="main-div">
+          <div className="container py-5">
+            <div className=" text-white row justify-content-between">
+              <span className="col-12 col-lg-8">
+                <h1>Интернет магазин сертифицированных</h1>
+                <h6 className="py-2">златоустовских ножей</h6>
+                <p>
+                  Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем
+                  магазине представлен наиболее широкий выбор Златоустовских
+                  ножей от Златоустовских Оружейных Фабрик и компаний, мы
+                  являемся официальными поставщиками.
+                </p>
+                <Link
+                  to="/category"
+                  className="btn btn-warning text-light my-3 w-lg-25"
+                >
+                  Подробнее
+                </Link>
+              </span>
+              <img
+                className="col-12 p-5 p-lg-0 col-lg-3  align-self-center  "
+                src="/knife.png"
+                alt="knife"
+              />
+            </div>
+            <div className="row my-3">
+              <div className="col-12 pb-4 col-sm-6 col-lg-3 text-center text-light ">
+                <img src="/garantiya.png" alt="img" className="mb-2" />
+                <p>Гарантия 100% возврата денежных средств</p>
+              </div>
+              <div className="col-12 pb-4 col-sm-6 col-lg-3 text-center text-light ">
+                <img src="/dastavka.png" alt="img" className="mb-2" />
+                <p>Доставка по России, Казахстану и Белоруссии</p>
+              </div>
+              <div className="col-12 pb-4 col-sm-6 col-lg-3 text-center text-light ">
+                <img src="/afarmlena.png" alt="img" />
+                <p>Возможность оформление заказа без регистрации.</p>
+              </div>
+              <div className="col-12 pb-4 col-sm-6 col-lg-3 text-center text-light ">
+                <img src="/skidka.png" alt="img" className="mb-2" />
+                <p>Скидки постоянным покупателям.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="container py-5">
+        <div className="p-3 card-shadow mb-5">
+          <h2>Интернет-магазин сертифицированных Златоустовских ножей</h2>
+          <p className="mb-3">
+            Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине
+            представлен наиболее широкий выбор Златоустовских ножей от
+            Златоустовских Оружейных Фабрик и компаний, мы являемся официальными
+            поставщиками. В нашем магазине Вы можете посмотреть, сравнить,
+            оценить и купить понравившийся златоустовский нож с официальной
+            гарантией, не выходя из дома, имея под рукой только устройство с
+            выходом в интернет (ПК, ноутбук, планшет, смартфон) и телефон.
+          </p>
+          <p>
+            {" "}
+            Оформить заказ можно без лишних усилий, Вам необходимо только
+            выбрать нож, нажать кнопку «Купить» перейти в корзину и заполнить
+            предложенные поля, и Ваш заказ уже принят! Наши менеджеры оперативно
+            свяжутся с Вами по телефону и обсудят детали заказа. Мы осуществляем
+            доставку продукции в любой населённый пункт по всей России,
+            Казахстану и Белоруссии.
+          </p>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+            <div className="d-flex justify-content-between card-shadow p-3">
+              <span>
+                <h5>katalog nojey</h5>
+                <p className="card-category-hr"></p>
+                <ul className="mt-4">
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li className="py-3">
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                </ul>
+              </span>
+              <img src="/card-knife.png" alt="" className="card-category-img" />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+            <div className="d-flex justify-content-between card-shadow p-3">
+              <span>
+                <h5>katalog nojey</h5>
+                <p className="card-category-hr"></p>
+                <ul className="mt-4">
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li className="py-3">
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                </ul>
+              </span>
+              <img src="/card-knife.png" alt="" className="card-category-img" />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+            <div className="d-flex justify-content-between card-shadow p-3">
+              <span>
+                <h5>katalog nojey</h5>
+                <p className="card-category-hr"></p>
+                <ul className="mt-4">
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li className="py-3">
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                </ul>
+              </span>
+              <img src="/card-knife.png" alt="" className="card-category-img" />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+            <div className="d-flex justify-content-between card-shadow p-3">
+              <span>
+                <h5>katalog nojey</h5>
+                <p className="card-category-hr"></p>
+                <ul className="mt-4">
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li className="py-3">
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                </ul>
+              </span>
+              <img src="/card-knife.png" alt="" className="card-category-img" />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+            <div className="d-flex justify-content-between card-shadow p-3">
+              <span>
+                <h5>katalog nojey</h5>
+                <p className="card-category-hr"></p>
+                <ul className="mt-4">
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li className="py-3">
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                </ul>
+              </span>
+              <img src="/card-knife.png" alt="" className="card-category-img" />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+            <div className="d-flex justify-content-between card-shadow p-3">
+              <span>
+                <h5>katalog nojey</h5>
+                <p className="card-category-hr"></p>
+                <ul className="mt-4">
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li className="py-3">
+                    <p>Lorem ipsum</p>
+                  </li>
+                  <li>
+                    <p>Lorem ipsum</p>
+                  </li>
+                </ul>
+              </span>
+              <img src="/card-knife.png" alt="" className="card-category-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <SpecialProduct props={obj} />
+      <FreshProduct props={obj2} />
+      <SpecialProduct props={obj} />
+      <SpecialProduct props={obj} />
+      <FreshProduct props={obj2} />
+      <SpecialProduct props={obj} />
+      <SpecialProduct props={obj} />
+      <SpecialProduct props={obj3} />
+      <section className="container">
+        <h2 className="ps-3">Nashi Stali</h2>
+        <div className="row row-cols-4 p-3">
+          <div className="col my-2">
+            <div className="card-shadow bg-light">
+              <img src="/home-bg.png" alt="" className="w-100" />
+              <div className="p-2">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem.</p>
+                <p>01.17.2003</p>
+              </div>
+            </div>
+          </div>
+          <div className="col my-2">
+            <div className="card-shadow bg-light">
+              <img src="/home-bg.png" alt="" className="w-100" />
+              <div className="p-2">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem.</p>
+                <p>01.17.2003</p>
+              </div>
+            </div>
+          </div>
+          <div className="col my-2">
+            <div className="card-shadow bg-light">
+              <img src="/home-bg.png" alt="" className="w-100" />
+              <div className="p-2">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem.</p>
+                <p>01.17.2003</p>
+              </div>
+            </div>
+          </div>
+          <div className="col my-2">
+            <div className="card-shadow bg-light">
+              <img src="/home-bg.png" alt="" className="w-100" />
+              <div className="p-2">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem.</p>
+                <p>01.17.2003</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row row-cols-2 p-3">
+          <div className="col my-2">
+            <div className="card-shadow">
+              <div className="row">
+                <div className="col-7 p-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                  <p className="card-category-hr"></p>
+                  <p className="my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    itaque!
+                  </p>
+                  <button className="btn btn-warning w-75 text-light">
+                    {" "}
+                    Подробнее
+                  </button>
+                </div>
+                <img src="/home-bg.png" alt="" className="col-5" />
+              </div>
+            </div>
+          </div>
+          <div className="col my-2">
+            <div className="card-shadow">
+              <div className="row">
+                <div className="col-7 p-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                  <p className="card-category-hr"></p>
+                  <p className="my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    itaque!
+                  </p>
+                  <button className="btn btn-warning w-75 text-light">
+                    {" "}
+                    Подробнее
+                  </button>
+                </div>
+                <img src="/home-bg.png" alt="" className="col-5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="main">
+        <div className="main-div py-5">
+          <div className="container  text-center">
+            <h1 className="mb-3 text-warning">
+              Интернет магазин сертифицированных
+            </h1>
+            <p className="text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              molestiae et voluptatem distinctio quibusdam ratione laudantium
+              provident? Laborum fuga culpa blanditiis, quam autem sed similique
+              quod quasi excepturi dolorum maxime fugit veritatis rem rerum!
+              Maiores neque ea sapiente eos corrupti dolor exercitationem
+              recusandae similique cum possimus id quia, doloremque esse soluta
+              quod alias aspernatur, officiis voluptatum illo mollitia nobis
+              optio ullam fuga? Tenetur ut vitae amet quaerat? Voluptates
+              molestias quaerat eligendi possimus dolore delectus qui sit magnam
+              voluptate reiciendis! Modi recusandae molestias harum eius, quos
+              fugiat ut. Rerum consequatur recusandae totam eius id beatae ullam
+              est, quibusdam, distinctio dignissimos similique.
+            </p>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </>
-  )
+  );
 }
 
 export default Home

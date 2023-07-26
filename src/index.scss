@@ -36,6 +36,36 @@ p{
 a{
     text-decoration: none !important;
 }
+.main{
+    background-image: url('/home-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .main-div{
+        background-color: #040d08c2;
+
+    }
+}
+.fresh-product{
+    background-image: url('/home-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .fresh-product-div{
+        background-color: #040d08c2;
+
+    }
+}
+.card-shadow{
+    box-shadow: 1px 1px 12px 1px rgb(165, 163, 163);
+}
+.card-category-hr{
+    padding: 0.1rem;
+    width: 4rem;
+    background-color: #ffc107;
+}
+.card-category-img{
+    width: 3rem;
+}
+
 // .header-sm{
 //     position: sticky !important;
 //     bottom: 0 ;
