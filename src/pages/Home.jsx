@@ -241,7 +241,7 @@ const Home = () => {
       <SpecialProduct props={obj1} />
       <section className="container">
         <h2 className="ps-3">Наши статьи</h2>
-        <div className="row row-cols-4 p-3">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
           <div className="col my-2">
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
@@ -279,11 +279,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="row row-cols-2 p-3">
+        <div className="row row-cols-1 row-cols-lg-2 p-3">
           <div className="col my-2">
             <div className="card-shadow">
               <div className="row">
-                <div className="col-7 p-4">
+                <div className="col-12 col-sm-7 p-4">
                   <h5>Палобные мультифонари</h5>
                   <p className="card-category-hr"></p>
                   <p className="my-2">
@@ -295,7 +295,7 @@ const Home = () => {
                     Подробнее
                   </button>
                 </div>
-                <div className="col-5">
+                <div className="col-12 col-sm-5">
                   <img src="/fonar1.png" alt="" className="w-100" />
                 </div>
               </div>
@@ -304,7 +304,7 @@ const Home = () => {
           <div className="col my-2">
             <div className="card-shadow">
               <div className="row">
-                <div className="col-7 p-4">
+                <div className="col-12 col-sm-7 p-4">
                   <h5>Палобные мультифонари</h5>
                   <p className="card-category-hr"></p>
                   <p className="my-2">
@@ -316,12 +316,14 @@ const Home = () => {
                     Подробнее
                   </button>
                 </div>
-                <div className="col-5">
+                <div className="col-12 col-sm-5">
                   <img src="/fonar1.png" alt="" className="w-100" />
                 </div>
               </div>
             </div>
           </div>
+          
+          
         </div>
       </section>
       <SpecialProduct props={obj3} />
