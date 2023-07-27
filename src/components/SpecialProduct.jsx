@@ -2,7 +2,6 @@ import React from 'react'
 import ProductCard from './ProductCard';
 
 const SpecialProduct = ({ props, carouselId }) => {
-  console.log(carouselId);
   let obj = {
     id: 1,
     img: "/fonar-card.png",
