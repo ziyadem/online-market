@@ -7,19 +7,23 @@ import FreshProduct from '../components/FreshProduct';
 import ProductCard from '../components/ProductCard';
 
 const Home = () => {
-  let obj={
-    name:"Aksiya",
-    site:"Barcha aksiyalar"
-  }
-  let obj3={
-    name:"Fanar",
-    site:"Barcha aksiyalar"
-  }
+  let obj = {
+    name: "Хиты продаж",
+    site: "Перейти в каталог",
+  };
+  let obj1 = {
+    name: "Акции",
+    site: "Все акции",
+  };
   let obj2 = {
-    name: "Aksiya",
-    site: "Barcha aksiyalar",
+    name: "Новинки",
+    site: "Больше новинок",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium deserunt quasi dolor! Consequuntur, officiis aut. Tempore maiores explicabo distinctio a consequatur atque odit ut ratione expedita. Aut illo accusamus, laborum magnam fugit, dignissimos ab, quia quidem tempore veritatis dicta sunt sapiente adipisci doloremque. Molestias numquam dolores soluta possimus ipsa fugit, doloribus sit! Voluptate, incidunt aliquid! Accusantium eligendi dolor debitis sit? Quis eius nostrum qui ad obcaecati rem, quam ut natus voluptatem ratione, voluptate iste nesciunt tempora consectetur ipsa aliquid non! Beatae earum impedit minus eum asperiores consectetur velit illo laboriosam, optio quae hic sapiente sequi soluta tenetur officia quaerat?",
+      "Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.",
+  };
+  let obj3 = {
+    name: "Фонари",
+    site: "Перейти в каталог",
   };
   return (
     <>
@@ -71,7 +75,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="container py-5">
+      <section className="container py-5 hero">
         <div className="p-3 card-shadow mb-5">
           <h2>Интернет-магазин сертифицированных Златоустовских ножей</h2>
           <p className="mb-3">
@@ -95,175 +99,182 @@ const Home = () => {
         </div>
         <div className="row">
           <div className="col-12 col-sm-6 col-lg-4 p-3 ">
-            <div className="d-flex justify-content-between card-shadow p-3">
-              <span>
-                <h5>katalog nojey</h5>
-                <p className="card-category-hr"></p>
-                <ul className="mt-4">
+            <div className="card-shadow p-3">
+              <h5>Каталог ножей</h5>
+              <p className="card-category-hr"></p>
+              <div className="d-flex justify-content-between">
+                <ul className="mt-4 w-50">
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Разделочные</p>
                   </li>
                   <li className="py-3">
-                    <p>Lorem ipsum</p>
+                    <p>Туристические</p>
                   </li>
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Охотничьи</p>
                   </li>
                 </ul>
-              </span>
-              <img src="/card-knife.png" alt="" className="card-category-img" />
+                <div className="w-50">
+                  <img src="/knife-card1.png" alt="" className="w-100" />
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-4 p-3 ">
-            <div className="d-flex justify-content-between card-shadow p-3">
-              <span>
-                <h5>katalog nojey</h5>
-                <p className="card-category-hr"></p>
-                <ul className="mt-4">
+            <div className="card-shadow p-3">
+              <h5>Среднеклинковое оружие</h5>
+              <p className="card-category-hr"></p>
+              <div className="d-flex justify-content-between">
+                <ul className="mt-4 w-50">
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Разделочные</p>
                   </li>
                   <li className="py-3">
-                    <p>Lorem ipsum</p>
+                    <p>Туристические</p>
                   </li>
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Охотничьи</p>
                   </li>
                 </ul>
-              </span>
-              <img src="/card-knife.png" alt="" className="card-category-img" />
+                <div className="w-50">
+                  <img src="/knife-card2.png" alt="" className="w-100" />
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-4 p-3 ">
-            <div className="d-flex justify-content-between card-shadow p-3">
-              <span>
-                <h5>katalog nojey</h5>
-                <p className="card-category-hr"></p>
-                <ul className="mt-4">
+            <div className="card-shadow p-3">
+              <h5>Длинноклинковое оружие</h5>
+              <p className="card-category-hr"></p>
+              <div className="d-flex justify-content-between">
+                <ul className="mt-4 w-50">
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Разделочные</p>
                   </li>
                   <li className="py-3">
-                    <p>Lorem ipsum</p>
+                    <p>Туристические</p>
                   </li>
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Охотничьи</p>
                   </li>
                 </ul>
-              </span>
-              <img src="/card-knife.png" alt="" className="card-category-img" />
+                <div className="w-50">
+                  <img src="/knife-card3.png" alt="" className="w-100" />
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-4 p-3 ">
-            <div className="d-flex justify-content-between card-shadow p-3">
-              <span>
-                <h5>katalog nojey</h5>
-                <p className="card-category-hr"></p>
-                <ul className="mt-4">
+            <div className="card-shadow p-3">
+              <h5>Сувенирные изделия</h5>
+              <p className="card-category-hr"></p>
+              <div className="d-flex justify-content-between">
+                <ul className="mt-4 w-50">
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Разделочные</p>
                   </li>
                   <li className="py-3">
-                    <p>Lorem ipsum</p>
+                    <p>Туристические</p>
                   </li>
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Охотничьи</p>
                   </li>
                 </ul>
-              </span>
-              <img src="/card-knife.png" alt="" className="card-category-img" />
+                <div className="w-50">
+                  <img src="/knife-card4.png" alt="" className="w-100" />
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-4 p-3 ">
-            <div className="d-flex justify-content-between card-shadow p-3">
-              <span>
-                <h5>katalog nojey</h5>
-                <p className="card-category-hr"></p>
-                <ul className="mt-4">
+            <div className="card-shadow p-3">
+              <h5>Сопутствующие товары</h5>
+              <p className="card-category-hr"></p>
+              <div className="d-flex justify-content-between">
+                <ul className="mt-4 w-50">
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Разделочные</p>
                   </li>
                   <li className="py-3">
-                    <p>Lorem ipsum</p>
+                    <p>Туристические</p>
                   </li>
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Охотничьи</p>
                   </li>
                 </ul>
-              </span>
-              <img src="/card-knife.png" alt="" className="card-category-img" />
+                <div className="w-50">
+                  <img src="/knife-card5.png" alt="" className="w-100" />
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-4 p-3 ">
-            <div className="d-flex justify-content-between card-shadow p-3">
-              <span>
-                <h5>katalog nojey</h5>
-                <p className="card-category-hr"></p>
-                <ul className="mt-4">
+            <div className="card-shadow p-3">
+              <h5>Ножевая мастерская</h5>
+              <p className="card-category-hr"></p>
+              <div className="d-flex justify-content-between">
+                <ul className="mt-4 w-50">
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Разделочные</p>
                   </li>
                   <li className="py-3">
-                    <p>Lorem ipsum</p>
+                    <p>Туристические</p>
                   </li>
                   <li>
-                    <p>Lorem ipsum</p>
+                    <p>Охотничьи</p>
                   </li>
                 </ul>
-              </span>
-              <img src="/card-knife.png" alt="" className="card-category-img" />
+                <div className="w-50">
+                  <img src="/knife-card6.png" alt="" className="w-100" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <SpecialProduct props={obj} />
       <FreshProduct props={obj2} />
-      <SpecialProduct props={obj} />
-      <SpecialProduct props={obj} />
+      <SpecialProduct props={obj1} />
+      <SpecialProduct props={obj1} />
       <FreshProduct props={obj2} />
-      <SpecialProduct props={obj} />
-      <SpecialProduct props={obj} />
-      <SpecialProduct props={obj3} />
+      <SpecialProduct props={obj1} />
+      <SpecialProduct props={obj1} />
       <section className="container">
-        <h2 className="ps-3">Nashi Stali</h2>
+        <h2 className="ps-3">Наши статьи</h2>
         <div className="row row-cols-4 p-3">
           <div className="col my-2">
             <div className="card-shadow bg-light">
-              <img src="/home-bg.png" alt="" className="w-100" />
+              <img src="/knife-card7.png" alt="" className="w-100" />
               <div className="p-2">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p>Lorem.</p>
-                <p>01.17.2003</p>
+                <h5>Все о ножах: как правильно выбрать</h5>
+                <p>24.07.2019</p>
               </div>
             </div>
           </div>
           <div className="col my-2">
             <div className="card-shadow bg-light">
-              <img src="/home-bg.png" alt="" className="w-100" />
+              <img src="/knife-card8.png" alt="" className="w-100" />
               <div className="p-2">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p>Lorem.</p>
-                <p>01.17.2003</p>
+                <h5>Как правильно выбрать фонарь</h5>
+                <p>24.07.2019</p>
               </div>
             </div>
           </div>
           <div className="col my-2">
             <div className="card-shadow bg-light">
-              <img src="/home-bg.png" alt="" className="w-100" />
+              <img src="/knife-card9.png" alt="" className="w-100" />
               <div className="p-2">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p>Lorem.</p>
-                <p>01.17.2003</p>
+                <h5>Как правильно выбрать фонарь</h5>
+                <p>24.07.2019</p>
               </div>
             </div>
           </div>
           <div className="col my-2">
             <div className="card-shadow bg-light">
-              <img src="/home-bg.png" alt="" className="w-100" />
+              <img src="/knife-card10.png" alt="" className="w-100" />
               <div className="p-2">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p>Lorem.</p>
-                <p>01.17.2003</p>
+                <h5>Как правильно выбрать фонарь</h5>
+                <p>24.07.2019</p>
               </div>
             </div>
           </div>
@@ -273,7 +284,7 @@ const Home = () => {
             <div className="card-shadow">
               <div className="row">
                 <div className="col-7 p-4">
-                  <h5>Lorem, ipsum dolor.</h5>
+                  <h5>Палобные мультифонари</h5>
                   <p className="card-category-hr"></p>
                   <p className="my-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
@@ -284,7 +295,9 @@ const Home = () => {
                     Подробнее
                   </button>
                 </div>
-                <img src="/home-bg.png" alt="" className="col-5" />
+                <div className="col-5">
+                  <img src="/fonar1.png" alt="" className="w-100" />
+                </div>
               </div>
             </div>
           </div>
@@ -292,7 +305,7 @@ const Home = () => {
             <div className="card-shadow">
               <div className="row">
                 <div className="col-7 p-4">
-                  <h5>Lorem, ipsum dolor.</h5>
+                  <h5>Палобные мультифонари</h5>
                   <p className="card-category-hr"></p>
                   <p className="my-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
@@ -303,31 +316,33 @@ const Home = () => {
                     Подробнее
                   </button>
                 </div>
-                <img src="/home-bg.png" alt="" className="col-5" />
+                <div className="col-5">
+                  <img src="/fonar1.png" alt="" className="w-100" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="main">
-        <div className="main-div py-5">
+      <SpecialProduct props={obj3} />
+      <section className="section-last">
+        <div className="section-last-div py-5">
           <div className="container  text-center">
             <h1 className="mb-3 text-warning">
-              Интернет магазин сертифицированных
+              Златоустовские ножи интернет-магазин "ЗЛАТМАКС"
             </h1>
             <p className="text-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              molestiae et voluptatem distinctio quibusdam ratione laudantium
-              provident? Laborum fuga culpa blanditiis, quam autem sed similique
-              quod quasi excepturi dolorum maxime fugit veritatis rem rerum!
-              Maiores neque ea sapiente eos corrupti dolor exercitationem
-              recusandae similique cum possimus id quia, doloremque esse soluta
-              quod alias aspernatur, officiis voluptatum illo mollitia nobis
-              optio ullam fuga? Tenetur ut vitae amet quaerat? Voluptates
-              molestias quaerat eligendi possimus dolore delectus qui sit magnam
-              voluptate reiciendis! Modi recusandae molestias harum eius, quos
-              fugiat ut. Rerum consequatur recusandae totam eius id beatae ullam
-              est, quibusdam, distinctio dignissimos similique.
+              Наш интернет-магазин "ЗЛАТМАКС" предлагает Вам ножи очень высокого
+              качества из города оружейников - Златоуста. Златоустовские ножи
+              известны и популярны среди потребителей как на российским рынке,
+              так и за рубежом: ножи охотничьи, хозяйственные, туристические,
+              рыбацкие, складные и метательные. Нож Златоуста - это идеальный
+              друг и товарищ в повседневной жизни и в экстремальных ситуациях.
+              На многую продукцию распространяется гарантия до 10 лет - это один
+              из главных показателей качества. Для Вас на нашем сайте "zlatmax"
+              предложен огромный ассортимент Златоустовских ножей. Наши
+              менеджеры помогут определиться и подобрать самый лучший
+              Златоустовский нож, ориентируясь на Ваши пожелания.
             </p>
           </div>
         </div>

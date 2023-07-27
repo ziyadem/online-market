@@ -8,6 +8,9 @@
 p{
     margin: 0 !important;
 }
+header{
+    z-index: 3;
+}
 .search-div{
     background-color: #c6c6c680;
     border:1px solid #a1a1a180 !important;
@@ -44,6 +47,21 @@ a{
         background-color: #040d08c2;
 
     }
+}
+.section-last{
+    background-image: url('/bg-section.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .section-last-div{
+        background-color: #040d0856;
+
+    }
+}
+.hero{
+    .card-shadow img{
+        height: 10rem;
+    }
+
 }
 .fresh-product{
     background-image: url('/home-bg.png');
