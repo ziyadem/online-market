@@ -232,13 +232,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <SpecialProduct props={obj} />
-      <FreshProduct props={obj2} />
-      <SpecialProduct props={obj1} />
-      <SpecialProduct props={obj1} />
-      <FreshProduct props={obj2} />
-      <SpecialProduct props={obj1} />
-      <SpecialProduct props={obj1} />
+      <SpecialProduct props={obj} carouselId={1} />
+      <FreshProduct props={obj2} carouselId={7}/>
+      <SpecialProduct props={obj1} carouselId={2} />
+      <SpecialProduct props={obj1} carouselId={3} />
+      <FreshProduct props={obj2} carouselId={8}/>
+      <SpecialProduct props={obj1} carouselId={4} />
+      <SpecialProduct props={obj1} carouselId={5}/>
       <section className="container">
         <h2 className="ps-3">Наши статьи</h2>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
@@ -322,11 +322,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-          
-          
         </div>
       </section>
-      <SpecialProduct props={obj3} />
+      <SpecialProduct props={obj3} carouselId={6}/>
       <section className="section-last">
         <div className="section-last-div py-5">
           <div className="container  text-center">

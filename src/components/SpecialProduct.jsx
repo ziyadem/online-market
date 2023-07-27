@@ -1,16 +1,17 @@
 import React from 'react'
 import ProductCard from './ProductCard';
 
-const SpecialProduct = ({props}) => {
-    let obj = {
-      id: 1,
-      img: "/fonar-card.png",
-      title: "Нож Лиса",
-      size: "95х18",
-      structure: "Орех, Алюминий",
-      result: "12 отзывов",
-      price: "1200",
-    };
+const SpecialProduct = ({ props, carouselId }) => {
+  console.log(carouselId);
+  let obj = {
+    id: 1,
+    img: "/fonar-card.png",
+    title: "Нож Лиса",
+    size: "95х18",
+    structure: "Орех, Алюминий",
+    result: "12 отзывов",
+    price: "1200",
+  };
   return (
     <section className="container py-5">
       <div className="d-flex justify-content-between align-items-center px-3">
@@ -21,13 +22,13 @@ const SpecialProduct = ({props}) => {
         </span>
       </div>
       <div
-        id="carouselExampleIndicators"
+        id={"carouselExampleIndicators" + carouselId}
         class="carousel slide"
         data-bs-ride="true"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div className="row row-cols-4 p-3">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
               <ProductCard props={obj} />
               <ProductCard props={obj} />
               <ProductCard props={obj} />
@@ -35,7 +36,7 @@ const SpecialProduct = ({props}) => {
             </div>
           </div>
           <div class="carousel-item">
-            <div className="row row-cols-4 p-3">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
               <ProductCard props={obj} />
               <ProductCard props={obj} />
               <ProductCard props={obj} />
@@ -43,7 +44,7 @@ const SpecialProduct = ({props}) => {
             </div>
           </div>
           <div class="carousel-item">
-            <div className="row row-cols-4 p-3">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
               <ProductCard props={obj} />
               <ProductCard props={obj} />
               <ProductCard props={obj} />
@@ -52,10 +53,10 @@ const SpecialProduct = ({props}) => {
           </div>
         </div>
 
-        <div class="carousel-indicators">
+        <div class="carousel-indicators carousel-indicators-div">
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target={"#carouselExampleIndicators" + carouselId}
             data-bs-slide-to="0"
             class="active p-1 bg-warning"
             aria-current="true"
@@ -63,14 +64,14 @@ const SpecialProduct = ({props}) => {
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target={"#carouselExampleIndicators" + carouselId}
             data-bs-slide-to="1"
             aria-label="Slide 2"
             className="p-1 bg-warning"
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target={"#carouselExampleIndicators" + carouselId}
             data-bs-slide-to="2"
             aria-label="Slide 3"
             className="p-1 bg-warning"
@@ -79,6 +80,6 @@ const SpecialProduct = ({props}) => {
       </div>
     </section>
   );
-}
+};
 
 export default SpecialProduct

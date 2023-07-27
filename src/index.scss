@@ -83,6 +83,25 @@ a{
 .card-category-img{
     width: 3rem;
 }
+.dropdown-active{
+    a{
+        color:#ffc107 !important;
+    }
+    p{
+        margin-top: 20px !important;
+        padding: 0.1rem;
+        background-color: #ffc107;
+    }
+}
+.dropdown-item-active{
+    position: absolute;
+    left: 0;
+    background-color: black;
+    width: 100%;
+}
+.carousel-indicators-div{
+    margin-bottom: -1.5rem !important;
+}
 
 // .header-sm{
 //     position: sticky !important;
