@@ -817,6 +817,7 @@ const Category = () => {
                 </div>
               </div>
             </div>
+           
           </div>
           <div className="col-9">
             <div className="row row-cols-3 ps-3">

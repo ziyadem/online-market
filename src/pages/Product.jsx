@@ -1,17 +1,14 @@
 import React, { useState } from 'react'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import SpecialProduct from '../components/SpecialProduct';
 
 const Product = () => {
-  const [count, setCount] = useState(1);
-  const [display, setDisplay] = useState([
-                  ["d-block", "text-black fw-bold"],
-                  ["d-none", "text-secondary"],
-                  ["d-none", "text-secondary"],
-                  ["d-none", "text-secondary"],
-                ])
+  const [count, setCount] = useState(1)
+  const { product_title } = useParams()
+
+  const [display, setDisplay] = useState([ ["d-block", "text-black fw-bold"], ["d-none", "text-secondary"], ["d-none", "text-secondary"], ["d-none", "text-secondary"],])
   const [img, setImg] = useState("/knife1.png");
    let obj = {
      name: "Похожие товары",
@@ -45,7 +42,7 @@ const Product = () => {
             Разделочные ножи
           </Link>
           <i class="fa fa-solid fa-chevron-right text-warning"></i>
-          <p className="text-warning">Разделочные ножи</p>
+          <p className="text-warning">{product_title}</p>
         </div>
         <div className="row row-cols-1 row-cols-lg-2 py-4">
           <div className="pe-2 h-100">
