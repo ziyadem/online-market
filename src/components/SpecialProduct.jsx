@@ -1,7 +1,9 @@
 import React from 'react'
 import ProductCard from './ProductCard';
+import { useNavigate } from 'react-router-dom';
 
 const SpecialProduct = ({ props, carouselId }) => {
+  let navigation=useNavigate()
   let obj = {
     id: 1,
     img: "/fonar-card.png",
@@ -15,7 +17,7 @@ const SpecialProduct = ({ props, carouselId }) => {
     <section className="container py-5">
       <div className="d-flex justify-content-between align-items-center px-3">
         <h2>{props.name}</h2>
-        <span className="d-flex gap-2 align-items-center">
+        <span className="d-flex gap-2 align-items-center" onClick={()=> navigation('/products')}>
           <p className="text-secondary">{props.site}</p>
           <i class="fa fa-solid fa-chevron-right text-warning"></i>
         </span>
