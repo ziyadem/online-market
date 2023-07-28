@@ -120,18 +120,28 @@ input[type=checkbox]:active{
     outline: none !important;
     box-shadow:2px 2px 10px 5px #ebd69c !important;
 }
-// input[type=checkbox]:focus{
-//     border: none !important;
-//     padding: 5px !important;
-//     outline: none !important;
-//     box-shadow:none !important;
-// }
 
 
-// .header-sm{
-//     position: sticky !important;
-//     bottom: 0 ;
-//     right: 0;
-//     left: 0;
-//     width: 100%;
-// }
+select:focus{
+    outline: none !important;
+}
+select option {
+  margin: 40px;
+  background: black;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+option:not(:checked) {
+  background-color: #fff;
+  color: black;
+}
+option::selection {
+  background-color: #fff !important;
+  color: black !important;
+}
+
+.product-karzinka-card-img{
+  height: 23rem;
+}
+
+
