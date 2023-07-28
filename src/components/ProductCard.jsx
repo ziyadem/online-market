@@ -1,9 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const ProductCard = ({props}) => {
+  let navigation= useNavigate()
     console.log(props);
   return (
-    <div className="col my-2">
+    <div className="col my-2" onClick={()=> navigation(`/products/${props.title}`) }>
       <div className="card-shadow p-3 bg-light">
         <img src={props.img} alt="knife" className="w-100" />
         <h2>{props.title}</h2>

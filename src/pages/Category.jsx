@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import Information from '../components/Information';
 
 const Category = () => {
+  const { category_title } = useParams()
+  console.log(category_title);
     let obj = {
       id: 1,
       img: "/fonar-card.png",
@@ -22,7 +24,6 @@ const Category = () => {
   return (
     <>
       <Header />
-
       <section className="container p-3">
         <h2>Разделочные ножи</h2>
         <div className="row d-flex justify-content-between">
@@ -31,7 +32,11 @@ const Category = () => {
               Главная
             </Link>
             <i class="fa fa-solid fa-chevron-right text-warning"></i>
-            <p className="text-warning">Разделочные ножи</p>
+            <Link to="/categorys" className="text-secondary">
+              Categorys
+            </Link>
+            <i class="fa fa-solid fa-chevron-right text-warning"></i>
+            <p className="text-warning">{category_title}</p>
           </div>
           <div className="col-lg-4">
             <select class="form-select" aria-label="Default select example ">
@@ -817,7 +822,6 @@ const Category = () => {
                 </div>
               </div>
             </div>
-           
           </div>
           <div className="col-9">
             <div className="row row-cols-3 ps-3">
@@ -877,4 +881,4 @@ const Category = () => {
   );
 }
 
-export default Category
+export default Category;

@@ -38,8 +38,8 @@ const Product = () => {
             Главная
           </Link>
           <i class="fa fa-solid fa-chevron-right text-warning"></i>
-          <Link to="/category" className="text-secondary">
-            Разделочные ножи
+          <Link to="/products" className="text-secondary">
+            Products
           </Link>
           <i class="fa fa-solid fa-chevron-right text-warning"></i>
           <p className="text-warning">{product_title}</p>

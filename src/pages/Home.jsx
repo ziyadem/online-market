@@ -1,13 +1,14 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SpecialProduct from '../components/SpecialProduct';
 import FreshProduct from '../components/FreshProduct';
 import ProductCard from '../components/ProductCard';
 import Information from '../components/Information';
 
 const Home = () => {
+  let navigation =useNavigate()
   let obj = {
     name: "Хиты продаж",
     site: "Перейти в каталог",
@@ -103,7 +104,10 @@ const Home = () => {
           </p>
         </div>
         <div className="row">
-          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+          <div
+            className="col-12 col-sm-6 col-lg-4 p-3 "
+            onClick={() => navigation("/categorys")}
+          >
             <div className="card-shadow p-3">
               <h5>Каталог ножей</h5>
               <p className="card-category-hr"></p>
@@ -125,7 +129,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+          <div
+            className="col-12 col-sm-6 col-lg-4 p-3 "
+            onClick={() => navigation("/categorys/Среднеклинковое оружие")}
+          >
             <div className="card-shadow p-3">
               <h5>Среднеклинковое оружие</h5>
               <p className="card-category-hr"></p>
@@ -147,7 +154,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+          <div
+            className="col-12 col-sm-6 col-lg-4 p-3 "
+            onClick={() => navigation("/categorys/Длинноклинковое оружие")}
+          >
             <div className="card-shadow p-3">
               <h5>Длинноклинковое оружие</h5>
               <p className="card-category-hr"></p>
@@ -169,7 +179,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+          <div
+            className="col-12 col-sm-6 col-lg-4 p-3 "
+            onClick={() => navigation("/categorys/Сувенирные изделия")}
+          >
             <div className="card-shadow p-3">
               <h5>Сувенирные изделия</h5>
               <p className="card-category-hr"></p>
@@ -191,7 +204,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+          <div
+            className="col-12 col-sm-6 col-lg-4 p-3 "
+            onClick={() => navigation("/categorys/Сопутствующие товары")}
+          >
             <div className="card-shadow p-3">
               <h5>Сопутствующие товары</h5>
               <p className="card-category-hr"></p>
@@ -213,7 +229,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-lg-4 p-3 ">
+          <div
+            className="col-12 col-sm-6 col-lg-4 p-3 "
+            onClick={() => navigation("/categorys/Ножевая мастерская")}
+          >
             <div className="card-shadow p-3">
               <h5>Ножевая мастерская</h5>
               <p className="card-category-hr"></p>
@@ -238,12 +257,12 @@ const Home = () => {
         </div>
       </section>
       <SpecialProduct props={obj} carouselId={1} />
-      <FreshProduct props={obj2} carouselId={7}/>
+      <FreshProduct props={obj2} carouselId={7} />
       <SpecialProduct props={obj1} carouselId={2} />
       <SpecialProduct props={obj1} carouselId={3} />
-      <FreshProduct props={obj2} carouselId={8}/>
+      <FreshProduct props={obj2} carouselId={8} />
       <SpecialProduct props={obj1} carouselId={4} />
-      <SpecialProduct props={obj1} carouselId={5}/>
+      <SpecialProduct props={obj1} carouselId={5} />
       <section className="container">
         <h2 className="ps-3">Наши статьи</h2>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
@@ -329,8 +348,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <SpecialProduct props={obj3} carouselId={6}/>
-      <Information props={obj4}/>
+      <SpecialProduct props={obj3} carouselId={6} />
+      <Information props={obj4} />
       <Footer />
     </>
   );

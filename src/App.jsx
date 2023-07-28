@@ -1,7 +1,9 @@
 import { Routes,Route } from "react-router-dom"
 import Home from "./pages/Home"
-import Category from "./pages/Category";
+import Categorys from "./pages/Categorys";
 import Product from "./pages/Product";
+import Category from "./pages/Category";
+import Products from "./pages/Products";
 
 
 function App() {
@@ -10,8 +12,10 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/category" element={<Category />} />
-        <Route path="/product/:product_title" element={<Product />} />
+        <Route path="/categorys" element={<Categorys />} />
+        <Route path="/categorys/:category_title" element={<Category />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:product_title" element={<Product />} />
       </Routes>
     </>
   );
