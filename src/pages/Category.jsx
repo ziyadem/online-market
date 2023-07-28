@@ -7,7 +7,6 @@ import Information from '../components/Information';
 
 const Category = () => {
   const { category_title } = useParams()
-  console.log(category_title);
     let obj = {
       id: 1,
       img: "/fonar-card.png",
@@ -214,7 +213,7 @@ const Category = () => {
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseTwo"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseTwo"
                   >
                     Сталь
@@ -370,7 +369,7 @@ const Category = () => {
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseThree"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseThree"
                   >
                     Рукоять

@@ -1,8 +1,10 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { useNavigate } from 'react-router-dom'
 
 const Categorys = () => {
+  let navigation=useNavigate()
   return (
     <>
       <Header />
@@ -19,79 +21,115 @@ const Categorys = () => {
           </div>
         </div>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-          <div className="col my-2">
+          <div
+            className="col my-2"
+            onClick={() => navigation("/categorys/Разделочные ножи")}
+          >
             <div className="card-shadow bg-light">
               <img src="/knife-card7.png" alt="" className="w-100" />
-              <h5 className='p-3 text-center'>Разделочные ножи</h5>
+              <h5 className="p-3 text-center">Разделочные ножи</h5>
             </div>
           </div>
-         
+        
         </div>
       </section>
       <Footer />
