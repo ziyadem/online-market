@@ -11,9 +11,8 @@ p{
 header{
     z-index: 10;
 }
-.header{
-    position: sticky !important;
-    top: 0 !important;
+.header-naw{
+    z-index: 10;
 }
 .search-div{
     background-color: #c6c6c680;
@@ -39,6 +38,19 @@ header{
 }
 .header-bottom-card:hover{
   color:#ffc107;
+}
+.header-naw-hover-hr{
+    padding: 0.1rem;
+    margin-top: 1rem !important;
+}
+// background-color: #ffc107;
+.header-naw-three:hover{
+    h6{
+        color: #ffc107;
+    }
+    .header-naw-hover-hr{
+    background-color: #ffc107;
+}
 }
 a{
     text-decoration: none !important;
@@ -146,6 +158,15 @@ option::selection {
 
 .product-karzinka-card-img{
   height: 23rem;
+}
+.dropdown-menu{
+    p{
+        width: 15.5rem !important;
+    }
+    p:hover{
+        color: #ffc107;
+        cursor: pointer;
+    }
 }
 
 
