@@ -47,7 +47,7 @@ const Category = () => {
           </div>
         </div>
         <div className="row py-3">
-          <div className="col-3">
+          <div className="col-6 col-lg-3">
             <h5 className="p-3 bg-black text-white">Фильтр товаров</h5>
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
@@ -822,8 +822,8 @@ const Category = () => {
               </div>
             </div>
           </div>
-          <div className="col-9">
-            <div className="row row-cols-3 ps-3">
+          <div className="col-6 col-lg-9">
+            <div className="row row-col-1 row-cols-lg-3 ps-3">
               <ProductCard props={obj} />
               <ProductCard props={obj} />
               <ProductCard props={obj} />

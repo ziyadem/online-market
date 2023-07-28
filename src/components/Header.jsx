@@ -36,7 +36,7 @@ const Header = () => {
     // }
   return (
     <>
-      <header className="position-sticky top-0 w-100">
+      <header className="">
         <nav className="bg-black">
           <div className="container p-3 d-flex justify-content-between align-items-center">
             <ul className="d-none  d-lg-flex list-unstyled gap-5 m-0 ">
@@ -134,25 +134,26 @@ const Header = () => {
             </div>
           </div>
         </nav>
-        <nav className="bg-black">
-          <div className="container d-none d-lg-flex justify-content-between p-3">
-            <div
+        <nav className=" position-sticky top-0 w-100 header">
+          <nav className="bg-black">
+            <div className="container d-none d-lg-flex justify-content-between p-3">
+              <div
               // className={classhero}
               // onClick={() => setDropdownone(!dropdownone)}
-            >
-              <a href="#" className="text-white">
-                Каталог ножей
-              </a>
-              <p></p>
-            </div>
-            <div 
-            //  className={classhero} 
-            //  onClick={() => setDropdowntwo(!dropdowntwo)}
-            >
-              <a href="#">Клинковое оружие</a>
-              <p></p>
-            </div>
-            {/* <div className={classhero} onClick={() => setDropdownthre(!dropdownthre)}>
+              >
+                <a href="#" className="text-white">
+                  Каталог ножей
+                </a>
+                <p></p>
+              </div>
+              <div
+              //  className={classhero}
+              //  onClick={() => setDropdowntwo(!dropdowntwo)}
+              >
+                <a href="#">Клинковое оружие</a>
+                <p></p>
+              </div>
+              {/* <div className={classhero} onClick={() => setDropdownthre(!dropdownthre)}>
               <a href="#">Сувенирные изделия</a>
               <p></p>
             </div>
@@ -164,217 +165,217 @@ const Header = () => {
               <a href="#">Сопуствующие товары</a>
               <p></p>
             </div> */}
-          </div>
-          <div>
-            <div className='d-none'>
-              <div className="container">
-                <div className="d-flex justify-content-between text-light gap-5">
-                  <p>Категория ножей</p>
-                  <p>Категория ножей</p>
-                  <p>Категория ножей</p>
-                  <p>Категория ножей</p>
-                  <p>Категория ножей</p>
-                </div>
-                <p className="container border bg-light bg-opacity-50 my-4"></p>
-                <div className="d-flex justify-content-between gap-5">
-                  <ul className="list-unstyled">
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                  </ul>
-                  <ul className="list-unstyled">
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                  </ul>
-                  <ul className="list-unstyled">
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                  </ul>
-                  <ul className="list-unstyled">
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                  </ul>
-                  <ul className="list-unstyled">
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="/" className="text-white">
-                        Разделочные ножи
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <p className="container border bg-light bg-opacity-50 my-4"></p>
-                <div className="d-flex text-warning justify-content-between pb-4">
-                  <p>Смотреть все</p>
-                  <p>Смотреть все</p>
-                  <p>Смотреть все</p>
-                  <p>Смотреть все</p>
-                  <p>Смотреть все</p>
+            </div>
+            <div>
+              <div className="d-none">
+                <div className="container">
+                  <div className="d-flex justify-content-between text-light gap-5">
+                    <p>Категория ножей</p>
+                    <p>Категория ножей</p>
+                    <p>Категория ножей</p>
+                    <p>Категория ножей</p>
+                    <p>Категория ножей</p>
+                  </div>
+                  <p className="container border bg-light bg-opacity-50 my-4"></p>
+                  <div className="d-flex justify-content-between gap-5">
+                    <ul className="list-unstyled">
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                    </ul>
+                    <ul className="list-unstyled">
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                    </ul>
+                    <ul className="list-unstyled">
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                    </ul>
+                    <ul className="list-unstyled">
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                    </ul>
+                    <ul className="list-unstyled">
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                        <a href="/" className="text-white">
+                          Разделочные ножи
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="container border bg-light bg-opacity-50 my-4"></p>
+                  <div className="d-flex text-warning justify-content-between pb-4">
+                    <p>Смотреть все</p>
+                    <p>Смотреть все</p>
+                    <p>Смотреть все</p>
+                    <p>Смотреть все</p>
+                    <p>Смотреть все</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
+          </nav>
         </nav>
 
         <nav className="p-2 bg-black text-light d-lg-none position-fixed end-0 start-0 bottom-0">
