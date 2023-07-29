@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
-    let navigation=useNavigate()
+  let navigation = useNavigate();
+  const { cart } = useSelector((lyuboy) => lyuboy); // lyuboy => store
+
   return (
     <>
       <header>
@@ -86,12 +89,12 @@ const Header = () => {
               <span>
                 <i className="fa fa-heart-o fs-3"></i>
               </span>
-              <span className="d-flex align-items-center gap-2">
+              <span className="d-flex align-items-center gap-2" onClick={()=> navigation("/karzinka")}>
                 <i class="fa fa fa-cart-plus fs-2"></i>
                 <span>
                   <h6 className="m-0">0 p.</h6>
                   <div className="top-number bg-warning">
-                    <p className="text-center">0</p>
+                    <p className="text-center">{cart.items.length}</p>
                   </div>
                   <a
                     href="/"

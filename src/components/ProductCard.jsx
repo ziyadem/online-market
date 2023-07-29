@@ -1,8 +1,10 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 const ProductCard = ({props}) => {
   let navigation= useNavigate()
+  const dispatch = useDispatch();
   let karzinkaCard = JSON.parse(localStorage.getItem("karzinka"));
     function karzinka(obj){
       if(karzinkaCard==null){
@@ -13,8 +15,17 @@ const ProductCard = ({props}) => {
       localStorage.setItem("karzinka",JSON.stringify(karzinkaCard))
     }
 
+    
+
+    function handleAddItemToCart(product) {
+      dispatch({ type: "ADD_ITEM_TO_CART", payload: product });
+    }
+
   return (
-    <div className="col my-2" onClick={()=> navigation(`/products/${props.title}`) }>
+    <div
+      className="col my-2"
+      onClick={() => navigation(`/products/${props.title}`)}
+    >
       <div className="card-shadow p-3 bg-light">
         <img src={props.img} alt="knife" className="w-100" />
         <h2>{props.title}</h2>
@@ -36,12 +47,15 @@ const ProductCard = ({props}) => {
           <p>{props.price}</p>
           <span className="d-flex gap-2">
             <i class="fa  fa-scale-balanced text-black"></i>
-             <img src="/torozi.png" alt="" />
+            <img src="/torozi.png" alt="" />
             <i class="fa fa-solid fa-scale-unbalanced-flip"></i>
             <i className="fa fa-heart-o fs-3 text-warning"></i>
           </span>
         </span>
-        <div className="btn btn-warning text-light w-100 d-flex justify-content-center gap-2 align-items-center" onClick={()=>karzinka(props)}>
+        <div
+          className="btn btn-warning text-light w-100 d-flex justify-content-center gap-2 align-items-center"
+          onClick={() => handleAddItemToCart(props)}
+        >
           <p>В корзину</p>
           <i class="fa fa fa-cart-plus fs-2"></i>
         </div>

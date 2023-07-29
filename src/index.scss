@@ -170,6 +170,14 @@ option::selection {
         cursor: pointer;
     }
 }
+.login{
+    background-image: url('/bg.jpg');
+    background-size: cover;
+    .login-card{
+        background-color: rgba(132, 130, 125, 0.483);
+        border: none !important;
+    }
+}
 
 
 @media screen and (max-width: 800px) {
