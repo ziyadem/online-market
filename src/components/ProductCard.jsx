@@ -3,7 +3,16 @@ import { useNavigate } from 'react-router-dom';
 
 const ProductCard = ({props}) => {
   let navigation= useNavigate()
-    console.log(props);
+  let karzinkaCard = JSON.parse(localStorage.getItem("karzinka"));
+    function karzinka(obj){
+      if(karzinkaCard==null){
+        karzinkaCard=[obj]
+      }else{
+        karzinkaCard.push(obj)
+      }
+      localStorage.setItem("karzinka",JSON.stringify(karzinkaCard))
+    }
+
   return (
     <div className="col my-2" onClick={()=> navigation(`/products/${props.title}`) }>
       <div className="card-shadow p-3 bg-light">
@@ -32,7 +41,7 @@ const ProductCard = ({props}) => {
             <i className="fa fa-heart-o fs-3 text-warning"></i>
           </span>
         </span>
-        <div className="btn btn-warning text-light w-100 d-flex justify-content-center gap-2 align-items-center">
+        <div className="btn btn-warning text-light w-100 d-flex justify-content-center gap-2 align-items-center" onClick={()=>karzinka(props)}>
           <p>В корзину</p>
           <i class="fa fa fa-cart-plus fs-2"></i>
         </div>

@@ -12,7 +12,7 @@ header{
     z-index: 10;
 }
 .header-naw{
-    z-index: 10;
+    z-index: 1;
 }
 .search-div{
     background-color: #c6c6c680;
@@ -43,7 +43,6 @@ header{
     padding: 0.1rem;
     margin-top: 1rem !important;
 }
-// background-color: #ffc107;
 .header-naw-three:hover{
     h6{
         color: #ffc107;
@@ -170,6 +169,14 @@ option::selection {
         color: #ffc107;
         cursor: pointer;
     }
+}
+
+
+@media screen and (max-width: 800px) {
+  header {
+    position: sticky !important;
+    top: 0 !important;
+  }
 }
 
 

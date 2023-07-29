@@ -30,13 +30,14 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            <i
+            <div
+              type="button"
               data-bs-toggle="offcanvas"
-              href="#offcanvasDark"
-              role="button"
-              aria-controls="offcanvasDark"
-              className="fa fa-navicon text-light fs-2 d-lg-none "
-            ></i>
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            >
+              <i className="fa fa-navicon text-light fs-2 d-lg-none "></i>
+            </div>
             <img
               src="/logo-sm.png"
               alt="logo"
@@ -103,13 +104,22 @@ const Header = () => {
             </div>
           </div>
         </nav>
-        <nav className="p-2 bg-black text-light d-lg-none position-fixed end-0 start-0 bottom-0 ">
+        <nav className="p-2 bg-black text-light d-lg-none position-fixed end-0 start-0 bottom-0 header-naw">
           <div className="container d-flex justify-content-between w-100">
-            <div className="text-center header-bottom-card">
+            <div
+              className="text-center header-bottom-card"
+              onClick={() => navigation("/")}
+            >
               <i className="fa fa-home d-lg-none fs-2"></i>
               <p>Главная</p>
             </div>
-            <div className="text-center header-bottom-card">
+            <div
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+              className="text-center header-bottom-card"
+            >
               <i className="fa fa-navicon d-lg-none fs-2"></i>
               <p>Каталог</p>
             </div>
@@ -117,7 +127,10 @@ const Header = () => {
               <i className="fa fa-search d-lg-none fs-2"></i>
               <p>Поиск</p>
             </div>
-            <div className="text-center header-bottom-card">
+            <div
+              className="text-center header-bottom-card"
+              onClick={() => navigation("/karzinka")}
+            >
               <i className="fa fa fa-cart-plus fs-2 d-lg-none fs-2"></i>
               <p>Корзина</p>
             </div>
@@ -128,47 +141,485 @@ const Header = () => {
           </div>
         </nav>
         <div
-          class="offcanvas offcanvas-start show text-bg-dark"
+          className="offcanvas offcanvas-start bg-black "
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
           tabindex="-1"
-          id="offcanvasDark"
-          aria-labelledby="offcanvasDarkLabel"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkLabel">
-              Header
+          <div class="offcanvas-header text-light">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+              <img src="/logo-sm.png" alt="" />
             </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvasDark"
-              aria-label="Close"
-            ></button>
+            <div className="bg-light d-flex align-items-center justify-content-center p-3 pe-4  rounded-pill">
+              <button
+                type="button"
+                className="btn-close "
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <div class="accordion accordion-flush" id="accordionFlushExample2">
+          <div class="offcanvas-body text-light">
+            <div class="accordion" id="accordionExample">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="header-acordion">
+                <h2 class="accordion-header" id="headingOne">
                   <button
-                    class="accordion-button collapsed"
+                    className="accordion-button bg-warning text-light"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#header-acordion"
-                    aria-expanded="false"
-                    aria-controls="header-acordion"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
                   >
-                    Accordion Item #1
+                    Основной
                   </button>
                 </h2>
                 <div
-                  id="fheader-acordion"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="header-acordion"
-                  data-bs-parent="#accordionFlushExample2"
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                    <ul class="list-group">
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/personal-blog")}
+                      >
+                        Личный кабинет
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/kantakt")}
+                      >
+                        Контакты
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/yangiliklar")}
+                      >
+                        Новости
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/blog")}
+                      >
+                        Оплата и доставка
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/biz-haqimizda")}
+                      >
+                        О нас
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    className="accordion-button bg-warning text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Категория ножей
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Разделочные ножи")
+                        }
+                      >
+                        Разделочные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Туристические ножи")
+                        }
+                      >
+                        Туристические ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи охотничьи")}
+                      >
+                        Ножи охотничьи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Булатные ножи")}
+                      >
+                        Булатные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи из дамаска")}
+                      >
+                        Ножи из дамаска
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Тактического назначения")
+                        }
+                      >
+                        Тактического назначения
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Метательные ножи")
+                        }
+                      >
+                        Метательные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Мачете и кукри")}
+                      >
+                        Мачете и кукри
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    className="accordion-button bg-warning text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Производство ножей
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Разделочные ножи")
+                        }
+                      >
+                        Разделочные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Туристические ножи")
+                        }
+                      >
+                        Туристические ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи охотничьи")}
+                      >
+                        Ножи охотничьи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Булатные ножи")}
+                      >
+                        Булатные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи из дамаска")}
+                      >
+                        Ножи из дамаска
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Тактического назначения")
+                        }
+                      >
+                        Тактического назначения
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Метательные ножи")
+                        }
+                      >
+                        Метательные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Мачете и кукри")}
+                      >
+                        Мачете и кукри
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    className="accordion-button bg-warning text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Ножи по маркам стали
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Разделочные ножи")
+                        }
+                      >
+                        Разделочные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Туристические ножи")
+                        }
+                      >
+                        Туристические ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи охотничьи")}
+                      >
+                        Ножи охотничьи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Булатные ножи")}
+                      >
+                        Булатные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи из дамаска")}
+                      >
+                        Ножи из дамаска
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Тактического назначения")
+                        }
+                      >
+                        Тактического назначения
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Метательные ножи")
+                        }
+                      >
+                        Метательные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Мачете и кукри")}
+                      >
+                        Мачете и кукри
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    className="accordion-button bg-warning text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Заточка и полировка ножей
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Разделочные ножи")
+                        }
+                      >
+                        Разделочные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Туристические ножи")
+                        }
+                      >
+                        Туристические ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи охотничьи")}
+                      >
+                        Ножи охотничьи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Булатные ножи")}
+                      >
+                        Булатные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи из дамаска")}
+                      >
+                        Ножи из дамаска
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Тактического назначения")
+                        }
+                      >
+                        Тактического назначения
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Метательные ножи")
+                        }
+                      >
+                        Метательные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Мачете и кукри")}
+                      >
+                        Мачете и кукри
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    className="accordion-button bg-warning text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Ножевая мастерская
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Разделочные ножи")
+                        }
+                      >
+                        Разделочные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Туристические ножи")
+                        }
+                      >
+                        Туристические ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи охотничьи")}
+                      >
+                        Ножи охотничьи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Булатные ножи")}
+                      >
+                        Булатные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Ножи из дамаска")}
+                      >
+                        Ножи из дамаска
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Тактического назначения")
+                        }
+                      >
+                        Тактического назначения
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() =>
+                          navigation("/categorys/Метательные ножи")
+                        }
+                      >
+                        Метательные ножи
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-dark"
+                        onClick={() => navigation("/categorys/Мачете и кукри")}
+                      >
+                        Мачете и кукри
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
