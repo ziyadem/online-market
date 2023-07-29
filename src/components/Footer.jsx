@@ -136,16 +136,16 @@ const Footer = () => {
               </a>
             </li>
             <li className="d-flex justify-content-between pt-3 pe-3">
-              <a href="">
+              <a to="https://www.facebook.com/">
                 <img src="/facebook.png" alt="" />
               </a>
-              <a href="">
+              <a href="tel:997821720">
                 <img src="/tel.png" alt="" />
               </a>
-              <a href="">
+              <a href="https://telegram.org/">
                 <img src="/tg.png" alt="" />
               </a>
-              <a href="">
+              <a href="https://www.whatsapp.com/">
                 <img src="/watsap.png" alt="" />
               </a>
             </li>
@@ -196,13 +196,13 @@ const Footer = () => {
         <p className="container border bg-light bg-opacity-50 my-2"></p>
       </div>
       <div className="container d-lg-flex justify-content-between gap-4 mt-3 p-3 text-center pb-5 text-light">
-        <p className='w-100 w-lg-75'>
+        <p className="w-100 w-lg-75">
           Все материалы, размещенные на сайте, носят справочный характер и не
           являются публичной офертой, определяемойположениями Статьи 437
           Гражданского кодекса Российской Федерации. При копировании материалов
           гиперссылка на www.zlatmax.ru обязательна!
         </p>
-        <p className='w-lg-25 mb-5'>Златоустовские ножи www.zlatmax.ru ©</p>
+        <p className="w-lg-25 mb-5">Златоустовские ножи www.zlatmax.ru ©</p>
       </div>
     </footer>
   );

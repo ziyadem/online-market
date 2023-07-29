@@ -5,7 +5,7 @@ const Header = () => {
     let navigation=useNavigate()
   return (
     <>
-      <header >
+      <header>
         <nav className="bg-black">
           <div className="container p-3 d-flex justify-content-between align-items-center">
             <ul className="d-none  d-lg-flex list-unstyled gap-5 m-0 ">
@@ -32,9 +32,9 @@ const Header = () => {
             </ul>
             <i
               data-bs-toggle="offcanvas"
-              href="#offcanvasExample"
+              href="#offcanvasDark"
               role="button"
-              aria-controls="offcanvasExample"
+              aria-controls="offcanvasDark"
               className="fa fa-navicon text-light fs-2 d-lg-none "
             ></i>
             <img
@@ -103,7 +103,7 @@ const Header = () => {
             </div>
           </div>
         </nav>
-        <nav className="p-2 bg-black text-light d-lg-none position-fixed end-0 start-0 bottom-0">
+        <nav className="p-2 bg-black text-light d-lg-none position-fixed end-0 start-0 bottom-0 ">
           <div className="container d-flex justify-content-between w-100">
             <div className="text-center header-bottom-card">
               <i className="fa fa-home d-lg-none fs-2"></i>
@@ -128,52 +128,50 @@ const Header = () => {
           </div>
         </nav>
         <div
-          class="offcanvas offcanvas-start"
+          class="offcanvas offcanvas-start show text-bg-dark"
           tabindex="-1"
-          id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel"
+          id="offcanvasDark"
+          aria-labelledby="offcanvasDarkLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-              Offcanvas
+            <h5 class="offcanvas-title" id="offcanvasDarkLabel">
+              Header
             </h5>
             <button
               type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvasDark"
               aria-label="Close"
             ></button>
           </div>
           <div class="offcanvas-body">
-            <div>
-              Some text as placeholder. In real life you can have the elements
-              you have chosen. Like, text, images, lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-              >
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
+            <div class="accordion accordion-flush" id="accordionFlushExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="header-acordion">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#header-acordion"
+                    aria-expanded="false"
+                    aria-controls="header-acordion"
+                  >
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div
+                  id="fheader-acordion"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="header-acordion"
+                  data-bs-parent="#accordionFlushExample2"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

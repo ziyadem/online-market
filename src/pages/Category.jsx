@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import Information from '../components/Information';
 
 const Category = () => {
+  const navigation=useNavigate()
   const { category_title } = useParams()
     let obj = {
       id: 1,
@@ -26,7 +27,7 @@ const Category = () => {
       <section className="container p-3">
         <h2>Разделочные ножи</h2>
         <div className="row d-flex justify-content-between">
-          <div className="col-lg-8 d-flex gap-3 align-items-center">
+          <div className="col-sm-8 d-flex gap-3 align-items-center">
             <Link to="/" className="text-secondary">
               Главная
             </Link>
@@ -37,7 +38,7 @@ const Category = () => {
             <i class="fa fa-solid fa-chevron-right text-warning"></i>
             <p className="text-warning">{category_title}</p>
           </div>
-          <div className="col-lg-4">
+          <div className="col-sm-4">
             <select class="form-select" aria-label="Default select example ">
               <option selected>По популярности</option>
               <option value="1">One</option>
@@ -47,7 +48,7 @@ const Category = () => {
           </div>
         </div>
         <div className="row py-3">
-          <div className="col-6 col-lg-3">
+          <div className="col-12 col-lg-3">
             <h5 className="p-3 bg-black text-white">Фильтр товаров</h5>
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
@@ -822,8 +823,8 @@ const Category = () => {
               </div>
             </div>
           </div>
-          <div className="col-6 col-lg-9">
-            <div className="row row-col-1 row-cols-lg-3 ps-3">
+          <div className="col-12 col-lg-9">
+            <div className="row row-col-1 row-cols-sm-2 row-cols-lg-3 ps-3">
               <ProductCard props={obj} />
               <ProductCard props={obj} />
               <ProductCard props={obj} />
@@ -837,11 +838,18 @@ const Category = () => {
               <ProductCard props={obj} />
               <ProductCard props={obj} />
             </div>
-            <div className="d-flex justify-content-between align-items-center ps-3 pt-3">
-              <button type="button" class="btn btn-outline-warning ">
+            <div className="row  justify-content-between align-items-center ps-3 pt-3">
+              <button
+                type="button"
+                className="btn btn-outline-warning col-12 col-sm-4 mb-2"
+                onClick={() => navigation('/products')}
+              >
                 Показать больше
               </button>
-              <div aria-label="Page navigation example d-flex">
+              <div
+                aria-label="Page navigation example d-flex"
+                className="col-12 col-sm-4"
+              >
                 <ul class="pagination ">
                   <li class="page-item disabled">
                     <a class="page-link">

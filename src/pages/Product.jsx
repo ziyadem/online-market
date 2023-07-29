@@ -33,7 +33,7 @@ const Product = () => {
     <>
       <Header />
       <section className="container p-3">
-        <div className="col-lg-8 d-flex gap-3 align-items-center">
+        <div className="d-flex gap-3 align-items-center ">
           <Link to="/" className="text-secondary">
             Главная
           </Link>
@@ -44,7 +44,7 @@ const Product = () => {
           <i class="fa fa-solid fa-chevron-right text-warning"></i>
           <p className="text-warning">{product_title}</p>
         </div>
-        <div className="row row-cols-1 row-cols-lg-2 py-4">
+        <div className="row row-cols-1 row-cols-lg-2 py-4 ">
           <div className="pe-2 h-100">
             <div>
               <img
@@ -82,45 +82,48 @@ const Product = () => {
           </div>
           <div className="card-shadow p-3 bg-light ">
             <div className="d-flex justify-content-between align-items-center">
-              <div className="d-flex align-items-center gap-3">
+              <div className="col-sm-4 col-6  ">
                 <h4 className="m-0">Нож Снегирь</h4>
-                <span className="d-flex gap-2">
+                <a href="#" className="text-success mb-3">
+                  В наличии
+                </a>
+              </div>
+              <div className="col-sm-8 col-6  row row-cols-1  row-cols-sm-3  justify-content-between">
+                <span className="d-flex gap-2 ">
                   <i class="fa fa-solid fa-star text-warning"></i>
                   <i class="fa fa-solid fa-star text-warning"></i>
                   <i class="fa fa-solid fa-star text-warning"></i>
                   <i class="fa fa-solid fa-star text-warning"></i>
                   <i class="fa fa-solid fa-star text-warning"></i>
                 </span>
-              </div>
-              <div className="d-flex gap-3">
-                <img src="/torozi.png" alt="" />
-                <i className="fa fa-heart-o fs-3 text-warning"></i>
+                <div className="d-flex gap-3 ">
+                  <img src="/torozi.png" alt="" />
+                  <i className="fa fa-heart-o fs-3 text-warning"></i>
+                </div>
               </div>
             </div>
-            <a href="#" className="text-success mb-3">
-              В наличии
-            </a>
+
             <hr />
-            <div className="row row-cols-3">
-              <p>Артикул:</p>
-              <p className="text-secondary">AF0000001952</p>
+            <div className="row">
+              <p className="col">Артикул:</p>
+              <p className="text-secondary col">AF0000001952</p>
             </div>
-            <div className="row row-cols-3">
-              <p>Торговая марка::</p>
-              <p className="text-secondary">WUESTHOF (Германия)</p>
+            <div className="row">
+              <p className="col">Торговая марка::</p>
+              <p className="text-secondary col">WUESTHOF (Германия)</p>
             </div>
-            <div className="row row-cols-3">
-              <p>Серия:</p>
-              <p className="text-secondary">Ножи серии Classic Ikon</p>
+            <div className="row">
+              <p className="col">Серия:</p>
+              <p className="text-secondary col">Ножи серии Classic Ikon</p>
             </div>
-            <div className="row row-cols-3">
-              <p>Бонусные баллы:</p>
-              <p className="text-secondary">38</p>
+            <div className="row">
+              <p className="col">Бонусные баллы:</p>
+              <p className="text-secondary col">38</p>
             </div>
             <hr />
-            <div className="d-flex align-items-center pb-2">
-              <p className="w-25">Сталь</p>
-              <select class=" w-75 border p-2">
+            <div className="row  justify-content-between align-items-center pb-2 gap-2">
+              <p className="col-sm-4">Сталь</p>
+              <select class="col-sm-7  border p-2">
                 <option selected>Выбрать сталь</option>
                 <option value="1">100Х13М</option>
                 <option value="2">40Х10С2М (ЭИ-107)</option>
@@ -130,9 +133,9 @@ const Product = () => {
                 <option value="3">50Х14МФ</option>
               </select>
             </div>
-            <div className="d-flex align-items-center pb-2">
-              <p className="w-25">Рукоять</p>
-              <select class=" w-75 border p-2">
+            <div className="row  justify-content-between align-items-center pb-2">
+              <p className="col-sm-4">Рукоять</p>
+              <select class=" col-sm-7 border p-2">
                 <option selected>Выбрать рукоять</option>
                 <option value="1">100Х13М</option>
                 <option value="2">40Х10С2М (ЭИ-107)</option>
@@ -142,9 +145,9 @@ const Product = () => {
                 <option value="3">50Х14МФ</option>
               </select>
             </div>
-            <div className="d-flex align-items-center pb-2">
-              <p className="w-25">Гарда и тыльник</p>
-              <select class=" w-75 border p-2">
+            <div className="row  justify-content-between align-items-center pb-2">
+              <p className="col-sm-4">Гарда и тыльник</p>
+              <select class="col-sm-7 border p-2">
                 <option selected>Выбрать гарда и тыльник</option>
                 <option value="1">100Х13М</option>
                 <option value="2">40Х10С2М (ЭИ-107)</option>
@@ -154,9 +157,9 @@ const Product = () => {
                 <option value="3">50Х14МФ</option>
               </select>
             </div>
-            <div className="d-flex align-items-center pb-2">
-              <p className="w-25">Обработка клинка</p>
-              <select class=" w-75 border p-2">
+            <div className="row  justify-content-between align-items-center pb-2">
+              <p className="col-sm-4">Обработка клинка</p>
+              <select class=" col-sm-7 border p-2">
                 <option selected>Выбрать обработку клинка</option>
                 <option value="1">100Х13М</option>
                 <option value="2">40Х10С2М (ЭИ-107)</option>
@@ -182,8 +185,8 @@ const Product = () => {
                 <p className="p-1 border rounded-circle bg-secondary">?</p>
               </div>
             </div>
-            <div className="row mt-3">
-              <div className="col-4 d-flex gap-3 align-items-center">
+            <div className="row align-items-center">
+              <div className="col-sm-4 d-flex gap-3 align-items-center my-3">
                 <button
                   className="btn btn-dark"
                   onClick={() => setCount((count) => count - 1)}
@@ -198,20 +201,22 @@ const Product = () => {
                   +
                 </button>
               </div>
-              <div className="col-8 d-flex gap-lg-5 gap-1 justify-content-end">
-                <button className="btn btn-warning d-flex text-white align-items-center justify-content-center gap-2 w-sm-50">
-                  В корзину
-                  <i class="fa fa fa-cart-plus fs-lg-5 "></i>
-                </button>
-                <button className="btn btn-dark text-center w-sm-50">
-                  Купить в 1 клик
-                </button>
+              <div className="col-sm-8">
+                <div className=" row justify-content-between gap-1">
+                  <button className="col-sm-5 btn btn-warning d-flex text-white align-items-center justify-content-center gap-2 w-sm-50">
+                    В корзину
+                    <i class="fa fa fa-cart-plus fs-lg-5 "></i>
+                  </button>
+                  <button className="col-sm-5 btn btn-dark text-center w-sm-50">
+                    Купить в 1 клик
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="card-shadow p-3">
-          <div className="d-flex gap-3">
+          <div className="row row-cols-sm-4">
             <p
               className={display[0][1]}
               onClick={() =>
