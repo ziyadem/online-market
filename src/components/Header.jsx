@@ -4,7 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   let navigation = useNavigate();
-  const { cart } = useSelector((lyuboy) => lyuboy); // lyuboy => store
+  const { cart } = useSelector((lyuboy) => lyuboy);
+  const { items } = useSelector((s) => s.cart);
+   // lyuboy => store
 
   return (
     <>
@@ -89,10 +91,21 @@ const Header = () => {
               <span>
                 <i className="fa fa-heart-o fs-3"></i>
               </span>
-              <span className="d-flex align-items-center gap-2" onClick={()=> navigation("/karzinka")}>
+              <span
+                className="d-flex align-items-center gap-2"
+                onClick={() => navigation("/karzinka")}
+              >
                 <i class="fa fa fa-cart-plus fs-2"></i>
                 <span>
-                  <h6 className="m-0">0 p.</h6>
+                  <h6 className="m-0">
+                    <span>
+                      $
+                      {items
+                        .reduce((p, c) => p + c.count * c.product.price, 0)
+                        .toFixed(2)}
+                    </span>
+                    p.
+                  </h6>
                   <div className="top-number bg-warning">
                     <p className="text-center">{cart.items.length}</p>
                   </div>

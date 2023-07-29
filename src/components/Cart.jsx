@@ -14,13 +14,9 @@ const ProductCard = ({props}) => {
       }
       localStorage.setItem("karzinka",JSON.stringify(karzinkaCard))
     }
-
-    
-
     function handleAddItemToCart(product) {
       dispatch({ type: "ADD_ITEM_TO_CART", payload: product });
     }
-
   return (
     <div
       className="col my-2"

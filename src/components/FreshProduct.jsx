@@ -1,17 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import ProductCard from './ProductCard';
+import React from "react";
+import { Link } from "react-router-dom";
+import ProductCard from "./Cart";
 
-const FreshProduct = ({props, carouselId}) => {
-     let obj = {
-       id: 1,
-       img: "/knife-card.png",
-       title: "Нож Лиса",
-       size: "95х18",
-       structure: "Орех, Алюминий",
-       result: "12 отзывов",
-       price: "1200",
-     };
+const FreshProduct = ({ props, carouselId }) => {
+  let obj = {
+    id: 1,
+    img: "/knife-card.png",
+    title: "Нож Лиса",
+    size: "95х18",
+    structure: "Орех, Алюминий",
+    result: "12 отзывов",
+    price: "1200",
+  };
   return (
     <section className="fresh-product">
       <div className="fresh-product-div">
@@ -88,6 +88,6 @@ const FreshProduct = ({props, carouselId}) => {
       </div>
     </section>
   );
-}
+};
 
-export default FreshProduct
+export default FreshProduct;

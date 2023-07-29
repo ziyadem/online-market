@@ -1,7 +1,7 @@
 import React from 'react'
-import { useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { useEffect } from 'react'
+import { toast } from 'react-toastify'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
   let navigation = useNavigate()

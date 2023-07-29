@@ -1,16 +1,15 @@
-import React from "react";
-import { useEffect } from "react";
-import { toast } from "react-toastify";
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react"
+import { toast } from "react-toastify"
+import { Link, useNavigate } from "react-router-dom"
 
 const Register = () => {
     let navigation=useNavigate()
     let tokenId = localStorage.getItem("token");
     useEffect(() => {
        if (tokenId) {
-         navigation("/");
+         navigation("/")
        }
-     }, []);
+     }, [])
     function handleSubmit(e){
       e.preventDefault()
       let password=e.target.password.value
