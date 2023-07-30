@@ -97,7 +97,6 @@ const Header = () => {
                 <span>
                   <h6 className="m-0">
                     <span>
-                      $
                       {items
                         .reduce((p, c) => p + c.count * c.product.price, 0)
                         .toFixed(2)}
@@ -107,12 +106,11 @@ const Header = () => {
                   <div className="top-number bg-warning">
                     <p className="text-center">{cart.items.length}</p>
                   </div>
-                  <a
-                    href="/"
+                  <p
                     className="m-0 text-warning text-decoration-none fw-bold"
                   >
                     Оформить заказ
-                  </a>
+                  </p>
                 </span>
               </span>
             </div>

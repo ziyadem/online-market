@@ -66,7 +66,7 @@ const Karzinka = () => {
                     +
                   </button>
                 </div>
-                <div className="col-md-1">${price * count}</div>
+                <div className="col-md-1">{price * count} p.</div>
                 <div className="col-md-1">
                   <button
                     onClick={() => handleRemoveItem(id)}
@@ -82,10 +82,10 @@ const Karzinka = () => {
         <div className="d-flex justify-content-between my-3">
           <Link to="/" className="btn btn-outline-success">
             <i className="fa fa-solid fa-arrow-left"></i>
-            Back to Shopping
+            Назад
           </Link>
           <button disabled={items.length === 0} className="btn btn-success">
-            Proceed to Payment <i className="fa fa-solid fa-arrow-right"></i>
+            Оформить заказ <i className="fa fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </section>
