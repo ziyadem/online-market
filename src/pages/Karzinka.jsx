@@ -42,15 +42,15 @@ const Karzinka = () => {
                 key={id}
                 className="list-group-item row d-flex align-items-center"
               >
-                <div className="col-md-1">
+                <div className="col-12 col-lg-1 col-sm-6">
                   <img src={img} alt={title} className="img-fluid" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-12 col-lg-7 col-sm-6">
                   <h3>{title}</h3>
                   <p>{description}</p>
                 </div>
-                <div className="col-md-1">{price}</div>
-                <div className="col-md-1 d-flex justify-content-between align-items-center">
+                <div className="col-12 col-lg-1 col-sm-6">{price}</div>
+                <div className="col-12 col-lg-1 col-sm-6  d-flex justify-content-between align-items-center">
                   <button
                     disabled={count <= 1}
                     onClick={() => handleDecItem(id)}
@@ -66,8 +66,8 @@ const Karzinka = () => {
                     +
                   </button>
                 </div>
-                <div className="col-md-1">{price * count} p.</div>
-                <div className="col-md-1">
+                <div className="col-12 col-lg-1 col-sm-6 mt-2 mt-lg-0">{price * count} p.</div>
+                <div className="col-12 col-lg-1 col-sm-6 mt-2 mt-lg-0">
                   <button
                     onClick={() => handleRemoveItem(id)}
                     className="btn btn-danger"
