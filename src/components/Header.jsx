@@ -48,7 +48,7 @@ const Header = () => {
               className="d-lg-none"
             />
             <a
-              href="/"
+              href="/register"
               className="d-flex align-items-center text-light text-decoration-none gap-3"
             >
               <i className="fa  fa-user-o text-light fs-2"></i>
