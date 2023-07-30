@@ -49,7 +49,7 @@ const Karzinka = () => {
                   <h3>{title}</h3>
                   <p>{description}</p>
                 </div>
-                <div className="col-md-1">{price} p</div>
+                <div className="col-md-1">{price}</div>
                 <div className="col-md-1 d-flex justify-content-between align-items-center">
                   <button
                     disabled={count <= 1}
@@ -80,11 +80,11 @@ const Karzinka = () => {
           )}
         </ul>
         <div className="d-flex justify-content-between my-3">
-          <Link to="/" className="btn btn-outline-success">
+          <Link to="/" className="btn btn-outline-warning">
             <i className="fa fa-solid fa-arrow-left"></i>
             Назад
           </Link>
-          <button disabled={items.length === 0} className="btn btn-success">
+          <button disabled={items.length === 0} className="btn btn-warning text-white">
             Оформить заказ <i className="fa fa-solid fa-arrow-right"></i>
           </button>
         </div>

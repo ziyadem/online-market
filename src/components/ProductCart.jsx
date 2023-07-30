@@ -1,36 +1,24 @@
-import React from 'react'
-import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react'
+import { useDispatch } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 
 const ProductCart = () => {
-
-  // console.log(props);
-     const [count, setCount] = useState(1);
-     const { product_title } = useParams();
-     const { items } = useSelector((s) => s.cart);
+     const [count, setCount] = useState(1)
+     const [product, setProduct] = useState({id:1,price: 1200,img: ["/knife1.png","/knife2.png","/knife3.png","/knife4.png","/knife5.png",],
+     })
      const dispatch = useDispatch();
+     const { product_title } = useParams()
      const [display, setDisplay] = useState([
        ["d-block", "text-black fw-bold"],
        ["d-none", "text-secondary"],
        ["d-none", "text-secondary"],
        ["d-none", "text-secondary"],
      ]);
-
-     const [img, setImg] = useState("/knife1.png");
-     let product = {id:1,price: 3865,img: ["/knife1.png","/knife2.png","/knife3.png","/knife4.png","/knife5.png",],
+     const [img, setImg] = useState("/knife1.png")
+     function handleAddItemToCart(product) {
+       dispatch({ type: "ADD_ITEM_TO_CART", payload: product });
      }
-      function handleIncItem(id) {
-        dispatch({ type: "INC_ITEM_COUNT", payload: id });
-      }
 
-      function handleDecItem(id) {
-        dispatch({ type: "DEC_ITEM_COUNT", payload: id });
-      }
-
-      function handleRemoveItem(id) {
-        dispatch({ type: "REMOVE_ITEM_FROM_CART", payload: id });
-      }
   return (
     <section className="container p-3">
       <div className="d-flex gap-3 align-items-center ">
@@ -186,21 +174,24 @@ const ProductCart = () => {
               <button
                 className="btn btn-dark"
                 disabled={count <= 1}
-                onClick={() => handleDecItem(props.id)}
+                onClick={() => setCount(count - 1)}
               >
                 -
               </button>
               <h4>{count}</h4>
               <button
                 className="btn btn-dark"
-                onClick={() => handleIncItem(props.id)}
+                onClick={() => setCount(count + 1)}
               >
                 +
               </button>
             </div>
             <div className="col-sm-8">
               <div className=" row justify-content-between gap-1">
-                <button className="col-sm-5 btn btn-warning d-flex text-white align-items-center justify-content-center gap-2 w-sm-50">
+                <button
+                  className="col-sm-5 btn btn-warning d-flex text-white align-items-center justify-content-center gap-2 w-sm-50"
+                  onClick={() => handleAddItemToCart(product)}
+                >
                   В корзину
                   <i className="fa fa fa-cart-plus fs-lg-5 "></i>
                 </button>

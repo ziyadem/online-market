@@ -5,7 +5,7 @@ const SpecialProduct = ({ props, carouselId }) => {
   let navigation = useNavigate();
   let obj = {
     id: 1,
-    img: "/fonar-card.png",
+    img: "/knife-card.png",
     title: "Нож Лиса",
     size: "95х18",
     structure: "Орех, Алюминий",

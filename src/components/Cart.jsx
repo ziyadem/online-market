@@ -4,16 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Cart = ({props}) => {
   let navigation= useNavigate()
-  const dispatch = useDispatch();
-  let karzinkaCard = JSON.parse(localStorage.getItem("karzinka"));
-    function karzinka(obj){
-      if(karzinkaCard==null){
-        karzinkaCard=[obj]
-      }else{
-        karzinkaCard.push(obj)
-      }
-      localStorage.setItem("karzinka",JSON.stringify(karzinkaCard))
-    }
+  const dispatch = useDispatch()
     function handleAddItemToCart(product) {
       dispatch({ type: "ADD_ITEM_TO_CART", payload: product });
     }
@@ -62,3 +53,14 @@ const Cart = ({props}) => {
 }
 
 export default Cart
+
+
+  // let karzinkaCard = JSON.parse(localStorage.getItem("karzinka"));
+  //   function karzinka(obj){
+  //     if(karzinkaCard==null){
+  //       karzinkaCard=[obj]
+  //     }else{
+  //       karzinkaCard.push(obj)
+  //     }
+  //     localStorage.setItem("karzinka",JSON.stringify(karzinkaCard))
+  //   }

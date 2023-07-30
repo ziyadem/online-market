@@ -18,7 +18,7 @@ const Main = () => {
                   являемся официальными поставщиками.
                 </p>
                 <Link
-                  to="/category"
+                  to="/"
                   className="btn btn-warning text-light my-3 w-lg-25"
                 >
                   Подробнее
