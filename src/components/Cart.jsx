@@ -31,10 +31,10 @@ const ProductCard = ({props}) => {
         </span>
         <span className="d-flex justify-content-between align-items-center my-2">
           <span className="d-flex gap-1">
-            <i class="fa fa-solid fa-star text-warning"></i>
-            <i class="fa fa-solid fa-star text-warning"></i>
-            <i class="fa fa-solid fa-star text-warning"></i>
-            <i class="fa fa-solid fa-star text-warning"></i>
+            <i className="fa fa-solid fa-star text-warning"></i>
+            <i className="fa fa-solid fa-star text-warning"></i>
+            <i className="fa fa-solid fa-star text-warning"></i>
+            <i className="fa fa-solid fa-star text-warning"></i>
           </span>
           <p>{props.result}</p>
         </span>
@@ -42,9 +42,9 @@ const ProductCard = ({props}) => {
         <span className="d-flex justify-content-between align-items-center my-2">
           <p>{props.price}</p>
           <span className="d-flex gap-2">
-            <i class="fa  fa-scale-balanced text-black"></i>
+            <i className="fa  fa-scale-balanced text-black"></i>
             <img src="/torozi.png" alt="" />
-            <i class="fa fa-solid fa-scale-unbalanced-flip"></i>
+            <i className="fa fa-solid fa-scale-unbalanced-flip"></i>
             <i className="fa fa-heart-o fs-3 text-warning"></i>
           </span>
         </span>
@@ -53,7 +53,7 @@ const ProductCard = ({props}) => {
           onClick={() => handleAddItemToCart(props)}
         >
           <p>В корзину</p>
-          <i class="fa fa fa-cart-plus fs-2"></i>
+          <i className="fa fa fa-cart-plus fs-2"></i>
         </div>
       </div>
     </div>

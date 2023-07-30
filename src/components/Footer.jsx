@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className="bg-black">
-      <div class="container text-center">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
-          <ul class="col text-light list-unstyled text-lg-start">
+      <div className="container text-center">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
+          <ul className="col text-light list-unstyled text-lg-start">
             <li className="pb-2">
               <h5>ИНФОРМАЦИЯ</h5>
             </li>
@@ -35,7 +35,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <ul class="col text-light list-unstyled text-lg-start">
+          <ul className="col text-light list-unstyled text-lg-start">
             <li className="pb-2">
               <h5>СЛУЖБА ПОДДЕРЖКИ</h5>
             </li>
@@ -55,7 +55,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <ul class="col text-light list-unstyled text-lg-start">
+          <ul className="col text-light list-unstyled text-lg-start">
             <li className="pb-2">
               <h5>ДОПОЛНИТЕЛЬНО</h5>
             </li>
@@ -75,7 +75,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <ul class="col text-light list-unstyled text-lg-start">
+          <ul className="col text-light list-unstyled text-lg-start">
             <li className="pb-2">
               <h5>ЛИЧНЫЙ КАБИНЕТ</h5>
             </li>
@@ -102,8 +102,8 @@ const Footer = () => {
           </ul>
         </div>
         <p className="container border bg-light bg-opacity-50 my-2"></p>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3 pt-2">
-          <ul class="col text-light list-unstyled text-lg-start">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3 pt-2">
+          <ul className="col text-light list-unstyled text-lg-start">
             <li className="pb-2">
               <h5>КОНТАКТЫ</h5>
             </li>
@@ -150,7 +150,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <ul class="col text-light list-unstyled text-lg-start">
+          <ul className="col text-light list-unstyled text-lg-start">
             <li className="pb-2">
               <h5>ПОЛЕЗНЫЕ ССЫЛКИ</h5>
             </li>
@@ -160,7 +160,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <ul class="col text-light list-unstyled text-lg-start">
+          <ul className="col text-light list-unstyled text-lg-start">
             <li className="pb-2">
               <h5>НАША ГАРАНТИЯ</h5>
             </li>
@@ -172,7 +172,7 @@ const Footer = () => {
               </p>
             </li>
           </ul>
-          <ul class="col text-light list-unstyled text-lg-start">
+          <ul className="col text-light list-unstyled text-lg-start">
             <li className="pb-2">
               <h5>НОВОСТНАЯ РАССЫЛКА</h5>
             </li>

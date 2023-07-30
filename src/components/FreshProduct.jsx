@@ -24,31 +24,31 @@ const FreshProduct = ({ props, carouselId }) => {
                 <Link to="/" className="text-warning">
                   {props.site}
                 </Link>
-                <i class="fa fa-solid fa-chevron-right text-warning"></i>
+                <i className="fa fa-solid fa-chevron-right text-warning"></i>
               </span>
             </div>
             <div className="col-12 col-lg-8">
               <div
                 id={"carouselExampleIndicators" + carouselId}
-                class="carousel slide"
+                className="carousel slide"
                 data-bs-ride="true"
               >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
                     <div className="row row-cols-1 row-cols-lg-3 p-3">
                       <ProductCard props={obj} />
                       <ProductCard props={obj} />
                       <ProductCard props={obj} />
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div className="carousel-item">
                     <div className="row row-cols-1 row-cols-lg-3 p-3">
                       <ProductCard props={obj} />
                       <ProductCard props={obj} />
                       <ProductCard props={obj} />
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div className="carousel-item">
                     <div className="row row-cols-1 row-cols-lg-3 p-3">
                       <ProductCard props={obj} />
                       <ProductCard props={obj} />
@@ -57,12 +57,12 @@ const FreshProduct = ({ props, carouselId }) => {
                   </div>
                 </div>
 
-                <div class="carousel-indicators carousel-indicators-div">
+                <div className="carousel-indicators carousel-indicators-div">
                   <button
                     type="button"
                     data-bs-target={"#carouselExampleIndicators" + carouselId}
                     data-bs-slide-to="0"
-                    class="active p-1 bg-warning"
+                    className="active p-1 bg-warning"
                     aria-current="true"
                     aria-label="Slide 1"
                   ></button>

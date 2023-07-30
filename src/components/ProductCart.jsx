@@ -6,27 +6,18 @@ import { Link, useParams } from 'react-router-dom';
 const ProductCart = () => {
      const [count, setCount] = useState(1);
      const { product_title } = useParams();
+     const { items } = useSelector((s) => s.cart);
+     const dispatch = useDispatch();
      const [display, setDisplay] = useState([
        ["d-block", "text-black fw-bold"],
        ["d-none", "text-secondary"],
        ["d-none", "text-secondary"],
        ["d-none", "text-secondary"],
      ]);
-     const [img, setImg] = useState("/knife1.png");
-     let product = {
-      id:1,
-       price: 3865,
-       img: [
-         "/knife1.png",
-         "/knife2.png",
-         "/knife3.png",
-         "/knife4.png",
-         "/knife5.png",
-       ],
-     }
-      const { items } = useSelector((s) => s.cart);
-      const dispatch = useDispatch();
 
+     const [img, setImg] = useState("/knife1.png");
+     let product = {id:1,price: 3865,img: ["/knife1.png","/knife2.png","/knife3.png","/knife4.png","/knife5.png",],
+     }
       function handleIncItem(id) {
         dispatch({ type: "INC_ITEM_COUNT", payload: id });
       }
@@ -44,11 +35,11 @@ const ProductCart = () => {
         <Link to="/" className="text-secondary">
           Главная
         </Link>
-        <i class="fa fa-solid fa-chevron-right text-warning"></i>
+        <i className="fa fa-solid fa-chevron-right text-warning"></i>
         <Link to="/products" className="text-secondary">
           Products
         </Link>
-        <i class="fa fa-solid fa-chevron-right text-warning"></i>
+        <i className="fa fa-solid fa-chevron-right text-warning"></i>
         <p className="text-warning">{product_title}</p>
       </div>
       <div className="row row-cols-1 row-cols-lg-2 py-4 ">
@@ -93,11 +84,11 @@ const ProductCart = () => {
             </div>
             <div className="col-sm-8 col-6  row row-cols-1  row-cols-sm-3  justify-content-between">
               <span className="d-flex gap-2 ">
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
               </span>
               <div className="d-flex gap-3 ">
                 <img src="/torozi.png" alt="" />
@@ -126,7 +117,7 @@ const ProductCart = () => {
           <hr />
           <div className="row  justify-content-between align-items-center pb-2 gap-2">
             <p className="col-sm-4">Сталь</p>
-            <select class="col-sm-7  border p-2">
+            <select className="col-sm-7  border p-2">
               <option selected>Выбрать сталь</option>
               <option value="1">100Х13М</option>
               <option value="2">40Х10С2М (ЭИ-107)</option>
@@ -138,7 +129,7 @@ const ProductCart = () => {
           </div>
           <div className="row  justify-content-between align-items-center pb-2">
             <p className="col-sm-4">Рукоять</p>
-            <select class=" col-sm-7 border p-2">
+            <select className=" col-sm-7 border p-2">
               <option selected>Выбрать рукоять</option>
               <option value="1">100Х13М</option>
               <option value="2">40Х10С2М (ЭИ-107)</option>
@@ -150,7 +141,7 @@ const ProductCart = () => {
           </div>
           <div className="row  justify-content-between align-items-center pb-2">
             <p className="col-sm-4">Гарда и тыльник</p>
-            <select class="col-sm-7 border p-2">
+            <select className="col-sm-7 border p-2">
               <option selected>Выбрать гарда и тыльник</option>
               <option value="1">100Х13М</option>
               <option value="2">40Х10С2М (ЭИ-107)</option>
@@ -162,7 +153,7 @@ const ProductCart = () => {
           </div>
           <div className="row  justify-content-between align-items-center pb-2">
             <p className="col-sm-4">Обработка клинка</p>
-            <select class=" col-sm-7 border p-2">
+            <select className=" col-sm-7 border p-2">
               <option selected>Выбрать обработку клинка</option>
               <option value="1">100Х13М</option>
               <option value="2">40Х10С2М (ЭИ-107)</option>
@@ -209,7 +200,7 @@ const ProductCart = () => {
               <div className=" row justify-content-between gap-1">
                 <button className="col-sm-5 btn btn-warning d-flex text-white align-items-center justify-content-center gap-2 w-sm-50">
                   В корзину
-                  <i class="fa fa fa-cart-plus fs-lg-5 "></i>
+                  <i className="fa fa fa-cart-plus fs-lg-5 "></i>
                 </button>
                 <button className="col-sm-5 btn btn-dark text-center w-sm-50">
                   Купить в 1 клик
@@ -345,11 +336,11 @@ const ProductCart = () => {
                 <p className="text-secondary">29.06.2019</p>
               </div>
               <span className="d-flex gap-1">
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
               </span>
               <p className="my-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -374,11 +365,11 @@ const ProductCart = () => {
                 <p className="text-secondary">29.06.2019</p>
               </div>
               <span className="d-flex gap-1">
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
-                <i class="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
+                <i className="fa fa-solid fa-star text-warning"></i>
               </span>
               <p className="my-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -398,7 +389,7 @@ const ProductCart = () => {
           <div className="d-flex gap-5 align-items-center mb-2">
             <h5>Ваша страна:</h5>
             <div>
-              <select class=" border p-2">
+              <select className=" border p-2">
                 <option selected>Россия</option>
                 <option selected>Санкт-Петербург</option>
                 <option selected>Екатеринослав</option>
@@ -408,7 +399,7 @@ const ProductCart = () => {
           <div className="d-flex gap-5 align-items-center mb-2">
             <h5>Ваш город :</h5>
             <div>
-              <select class=" border p-2">
+              <select className=" border p-2">
                 <option selected>Россия</option>
                 <option selected>Санкт-Петербург</option>
                 <option selected>Екатеринослав</option>

@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
-import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
   let navigation = useNavigate();
-  const { cart } = useSelector((lyuboy) => lyuboy);
-  const { items } = useSelector((s) => s.cart);
-   // lyuboy => store
+  const { items } = useSelector((s) => s.cart)
+  const { cart } = useSelector((lyuboy) => lyuboy)
 
   return (
     <>
@@ -164,8 +162,8 @@ const Header = () => {
           id="offcanvasScrolling"
           aria-labelledby="offcanvasScrollingLabel"
         >
-          <div class="offcanvas-header text-light">
-            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+          <div className="offcanvas-header text-light">
+            <h5 className="offcanvas-title" id="offcanvasScrollingLabel">
               <img src="/logo-sm.png" alt="" />
             </h5>
             <div className="bg-light d-flex align-items-center justify-content-center p-3 pe-4  rounded-pill">
@@ -177,10 +175,10 @@ const Header = () => {
               ></button>
             </div>
           </div>
-          <div class="offcanvas-body text-light">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
+          <div className="offcanvas-body text-light">
+            <div className="accordion" id="accordionExample">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
                   <button
                     className="accordion-button bg-warning text-light"
                     type="button"
@@ -198,34 +196,34 @@ const Header = () => {
                   aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <ul class="list-group">
+                  <div className="accordion-body">
+                    <ul className="list-group">
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/personal-blog")}
                       >
                         Личный кабинет
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/kantakt")}
                       >
                         Контакты
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/yangiliklar")}
                       >
                         Новости
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/blog")}
                       >
                         Оплата и доставка
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/biz-haqimizda")}
                       >
                         О нас
@@ -234,8 +232,8 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingTwo">
                   <button
                     className="accordion-button bg-warning text-light"
                     type="button"
@@ -249,14 +247,14 @@ const Header = () => {
                 </h2>
                 <div
                   id="collapseTwo"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <ul class="list-group">
+                  <div className="accordion-body">
+                    <ul className="list-group">
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Разделочные ножи")
                         }
@@ -264,7 +262,7 @@ const Header = () => {
                         Разделочные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Туристические ножи")
                         }
@@ -272,25 +270,25 @@ const Header = () => {
                         Туристические ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи охотничьи")}
                       >
                         Ножи охотничьи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Булатные ножи")}
                       >
                         Булатные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи из дамаска")}
                       >
                         Ножи из дамаска
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Тактического назначения")
                         }
@@ -298,7 +296,7 @@ const Header = () => {
                         Тактического назначения
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Метательные ножи")
                         }
@@ -306,7 +304,7 @@ const Header = () => {
                         Метательные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Мачете и кукри")}
                       >
                         Мачете и кукри
@@ -315,8 +313,8 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingThree">
                   <button
                     className="accordion-button bg-warning text-light"
                     type="button"
@@ -330,14 +328,14 @@ const Header = () => {
                 </h2>
                 <div
                   id="collapseThree"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <ul class="list-group">
+                  <div className="accordion-body">
+                    <ul className="list-group">
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Разделочные ножи")
                         }
@@ -345,7 +343,7 @@ const Header = () => {
                         Разделочные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Туристические ножи")
                         }
@@ -353,25 +351,25 @@ const Header = () => {
                         Туристические ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи охотничьи")}
                       >
                         Ножи охотничьи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Булатные ножи")}
                       >
                         Булатные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи из дамаска")}
                       >
                         Ножи из дамаска
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Тактического назначения")
                         }
@@ -379,7 +377,7 @@ const Header = () => {
                         Тактического назначения
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Метательные ножи")
                         }
@@ -387,7 +385,7 @@ const Header = () => {
                         Метательные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Мачете и кукри")}
                       >
                         Мачете и кукри
@@ -396,8 +394,8 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingFour">
                   <button
                     className="accordion-button bg-warning text-light"
                     type="button"
@@ -411,14 +409,14 @@ const Header = () => {
                 </h2>
                 <div
                   id="collapseFour"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   aria-labelledby="headingFour"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <ul class="list-group">
+                  <div className="accordion-body">
+                    <ul className="list-group">
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Разделочные ножи")
                         }
@@ -426,7 +424,7 @@ const Header = () => {
                         Разделочные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Туристические ножи")
                         }
@@ -434,25 +432,25 @@ const Header = () => {
                         Туристические ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи охотничьи")}
                       >
                         Ножи охотничьи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Булатные ножи")}
                       >
                         Булатные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи из дамаска")}
                       >
                         Ножи из дамаска
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Тактического назначения")
                         }
@@ -460,7 +458,7 @@ const Header = () => {
                         Тактического назначения
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Метательные ножи")
                         }
@@ -468,7 +466,7 @@ const Header = () => {
                         Метательные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Мачете и кукри")}
                       >
                         Мачете и кукри
@@ -477,8 +475,8 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingFive">
                   <button
                     className="accordion-button bg-warning text-light"
                     type="button"
@@ -492,14 +490,14 @@ const Header = () => {
                 </h2>
                 <div
                   id="collapseFive"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   aria-labelledby="headingFive"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <ul class="list-group">
+                  <div className="accordion-body">
+                    <ul className="list-group">
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Разделочные ножи")
                         }
@@ -507,7 +505,7 @@ const Header = () => {
                         Разделочные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Туристические ножи")
                         }
@@ -515,25 +513,25 @@ const Header = () => {
                         Туристические ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи охотничьи")}
                       >
                         Ножи охотничьи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Булатные ножи")}
                       >
                         Булатные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи из дамаска")}
                       >
                         Ножи из дамаска
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Тактического назначения")
                         }
@@ -541,7 +539,7 @@ const Header = () => {
                         Тактического назначения
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Метательные ножи")
                         }
@@ -549,7 +547,7 @@ const Header = () => {
                         Метательные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Мачете и кукри")}
                       >
                         Мачете и кукри
@@ -558,8 +556,8 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingSix">
                   <button
                     className="accordion-button bg-warning text-light"
                     type="button"
@@ -573,14 +571,14 @@ const Header = () => {
                 </h2>
                 <div
                   id="collapseSix"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   aria-labelledby="headingSix"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <ul class="list-group">
+                  <div className="accordion-body">
+                    <ul className="list-group">
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Разделочные ножи")
                         }
@@ -588,7 +586,7 @@ const Header = () => {
                         Разделочные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Туристические ножи")
                         }
@@ -596,25 +594,25 @@ const Header = () => {
                         Туристические ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи охотничьи")}
                       >
                         Ножи охотничьи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Булатные ножи")}
                       >
                         Булатные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Ножи из дамаска")}
                       >
                         Ножи из дамаска
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Тактического назначения")
                         }
@@ -622,7 +620,7 @@ const Header = () => {
                         Тактического назначения
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() =>
                           navigation("/categorys/Метательные ножи")
                         }
@@ -630,7 +628,7 @@ const Header = () => {
                         Метательные ножи
                       </li>
                       <li
-                        class="list-group-item list-group-item-dark"
+                        className="list-group-item list-group-item-dark"
                         onClick={() => navigation("/categorys/Мачете и кукри")}
                       >
                         Мачете и кукри
@@ -645,9 +643,9 @@ const Header = () => {
       </header>
       <nav className="bg-black position-sticky top-0 start-0 header-naw">
         <div className="container d-none d-lg-flex justify-content-between px-3 pt-3">
-          <div class="dropdown header-naw-three text-light">
+          <div className="dropdown header-naw-three text-light">
             <h6 data-bs-toggle="dropdown">Каталог ножей</h6>
-            <ul class="dropdown-menu p-3 bg-black text-light">
+            <ul className="dropdown-menu p-3 bg-black text-light">
               <div className="d-flex justify-content-between">
                 <p>Категория ножей</p>
                 <p>Производство ножей</p>

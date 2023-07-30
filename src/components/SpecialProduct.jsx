@@ -22,16 +22,16 @@ const SpecialProduct = ({ props, carouselId }) => {
           onClick={() => navigation("/products")}
         >
           <p className="text-secondary">{props.site}</p>
-          <i class="fa fa-solid fa-chevron-right text-warning"></i>
+          <i className="fa fa-solid fa-chevron-right text-warning"></i>
         </span>
       </div>
       <div
         id={"carouselExampleIndicators" + carouselId}
-        class="carousel slide"
+        className="carousel slide"
         data-bs-ride="true"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
               <ProductCard props={obj} />
               <ProductCard props={obj} />
@@ -39,7 +39,7 @@ const SpecialProduct = ({ props, carouselId }) => {
               <ProductCard props={obj} />
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
               <ProductCard props={obj} />
               <ProductCard props={obj} />
@@ -47,7 +47,7 @@ const SpecialProduct = ({ props, carouselId }) => {
               <ProductCard props={obj} />
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
               <ProductCard props={obj} />
               <ProductCard props={obj} />
@@ -57,7 +57,7 @@ const SpecialProduct = ({ props, carouselId }) => {
           </div>
         </div>
 
-        <div class="carousel-indicators carousel-indicators-div">
+        <div className="carousel-indicators carousel-indicators-div">
           <button
             type="button"
             data-bs-target={"#carouselExampleIndicators" + carouselId}
