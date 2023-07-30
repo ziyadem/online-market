@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import ProductCard from "./Cart";
+import { Link } from "react-router-dom"
+import Cart from "./Cart"
 
 const FreshProduct = ({ props, carouselId }) => {
   let obj = {
@@ -36,23 +35,23 @@ const FreshProduct = ({ props, carouselId }) => {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <div className="row row-cols-1 row-cols-lg-3 p-3">
-                      <ProductCard props={obj} />
-                      <ProductCard props={obj} />
-                      <ProductCard props={obj} />
+                      <Cart props={obj} />
+                      <Cart props={obj} />
+                      <Cart props={obj} />
                     </div>
                   </div>
                   <div className="carousel-item">
                     <div className="row row-cols-1 row-cols-lg-3 p-3">
-                      <ProductCard props={obj} />
-                      <ProductCard props={obj} />
-                      <ProductCard props={obj} />
+                      <Cart props={obj} />
+                      <Cart props={obj} />
+                      <Cart props={obj} />
                     </div>
                   </div>
                   <div className="carousel-item">
                     <div className="row row-cols-1 row-cols-lg-3 p-3">
-                      <ProductCard props={obj} />
-                      <ProductCard props={obj} />
-                      <ProductCard props={obj} />
+                      <Cart props={obj} />
+                      <Cart props={obj} />
+                      <Cart props={obj} />
                     </div>
                   </div>
                 </div>
@@ -90,4 +89,4 @@ const FreshProduct = ({ props, carouselId }) => {
   );
 };
 
-export default FreshProduct;
+export default FreshProduct

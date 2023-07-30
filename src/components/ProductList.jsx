@@ -1,5 +1,4 @@
-import React from "react";
-import ProductCard from "./Cart";
+import Cart from "./Cart"
 
 const ProductList = () => {
   let obj = {
@@ -25,29 +24,25 @@ const ProductList = () => {
         </div>
       </div>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
-        <ProductCard props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
+        <Cart props={obj} />
       </div>
     </section>
   );

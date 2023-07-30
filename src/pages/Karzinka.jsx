@@ -49,7 +49,7 @@ const Karzinka = () => {
                   <h3>{title}</h3>
                   <p>{description}</p>
                 </div>
-                <div className="col-md-1">${price}</div>
+                <div className="col-md-1">{price} p</div>
                 <div className="col-md-1 d-flex justify-content-between align-items-center">
                   <button
                     disabled={count <= 1}

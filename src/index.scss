@@ -99,6 +99,10 @@ header{
 .card-shadow{
     box-shadow: 1px 1px 12px 1px rgb(165, 163, 163);
 }
+.cart-title:hover{
+    color: #ffc107;
+    text-decoration: underline;
+}
 .card-category-hr{
     padding: 0.1rem;
     width: 4rem;

@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-const ProductCard = ({props}) => {
+const Cart = ({props}) => {
   let navigation= useNavigate()
   const dispatch = useDispatch();
   let karzinkaCard = JSON.parse(localStorage.getItem("karzinka"));
@@ -18,13 +18,14 @@ const ProductCard = ({props}) => {
       dispatch({ type: "ADD_ITEM_TO_CART", payload: product });
     }
   return (
-    <div
-      className="col my-2"
-      onClick={() => navigation(`/products/${props.title}`)}
-    >
+    <div className="col my-2">
       <div className="card-shadow p-3 bg-light">
         <img src={props.img} alt="knife" className="w-100" />
-        <h2>{props.title}</h2>
+        <h2
+          className="cart-title"
+          onClick={() => navigation(`/products/${props.title}`)}>
+          {props.title}
+        </h2>
         <span className="d-flex justify-content-between mt-2">
           <p>{props.size}</p>
           <p>{props.structure}</p>
@@ -60,4 +61,4 @@ const ProductCard = ({props}) => {
   );
 }
 
-export default ProductCard
+export default Cart

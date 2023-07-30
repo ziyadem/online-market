@@ -1,9 +1,6 @@
 import React from 'react'
 
-const Information = ({props}) => {
-    console.log(props);
-    console.log(props.title,props.description);
-    
+const Information = ({props}) => {    
   return (
     <div>
       <section className="section-last">

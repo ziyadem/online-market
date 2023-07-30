@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 
 const ProductCart = () => {
+
+  // console.log(props);
      const [count, setCount] = useState(1);
      const { product_title } = useParams();
      const { items } = useSelector((s) => s.cart);
@@ -184,14 +186,14 @@ const ProductCart = () => {
               <button
                 className="btn btn-dark"
                 disabled={count <= 1}
-                onClick={() => handleDecItem(id)}
+                onClick={() => handleDecItem(props.id)}
               >
                 -
               </button>
               <h4>{count}</h4>
               <button
                 className="btn btn-dark"
-                onClick={() => handleIncItem(id)}
+                onClick={() => handleIncItem(props.id)}
               >
                 +
               </button>

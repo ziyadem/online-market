@@ -1,6 +1,5 @@
-import React from "react";
-import ProductCard from "./Cart";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import Cart from "./Cart";
 
 const SpecialProduct = ({ props, carouselId }) => {
   let navigation = useNavigate();
@@ -33,26 +32,26 @@ const SpecialProduct = ({ props, carouselId }) => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
             </div>
           </div>
           <div className="carousel-item">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
             </div>
           </div>
           <div className="carousel-item">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 p-3">
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
-              <ProductCard props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
+              <Cart props={obj} />
             </div>
           </div>
         </div>
